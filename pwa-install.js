@@ -1,5 +1,5 @@
 /**
- * Pizza Hub - PWA Install Handler
+ * PizzaG - PWA Install Handler
  * Custom "Add to Home Screen" functionality
  */
 
@@ -304,7 +304,7 @@
         toast.className = 'fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 flex items-center space-x-2';
         toast.innerHTML = `
             <i class="fas fa-check-circle"></i>
-            <span>Pizza Hub installed successfully!</span>
+            <span>PizzaG installed successfully!</span>
         `;
 
         document.body.appendChild(toast);

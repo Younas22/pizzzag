@@ -1,11 +1,11 @@
 /**
- * Pizza Hub - Service Worker
+ * PizzaG - Service Worker
  * Handles caching for offline functionality
  */
 
-const CACHE_NAME = 'pizza-hub-v2';
-const STATIC_CACHE = 'pizza-hub-static-v2';
-const DYNAMIC_CACHE = 'pizza-hub-dynamic-v2';
+const CACHE_NAME = 'pizzag-v2';
+const STATIC_CACHE = 'pizzag-static-v2';
+const DYNAMIC_CACHE = 'pizzag-dynamic-v2';
 
 // Files to cache immediately on install
 const STATIC_ASSETS = [
@@ -66,7 +66,7 @@ self.addEventListener('activate', (event) => {
                     cacheNames
                         .filter((name) => {
                             // Delete any cache that doesn't match current version
-                            return name.startsWith('pizza-hub-') &&
+                            return name.startsWith('pizzag-') &&
                                    name !== STATIC_CACHE &&
                                    name !== DYNAMIC_CACHE;
                         })
