@@ -1,0 +1,883 @@
+{
+  "categories": [
+    {
+      "id": "burgers",
+      "sections": [
+        {
+          "title": "Special Burgers",
+          "icon": "fas fa-burger",
+          "borderColor": "red-300",
+          "gradientFrom": "red-100",
+          "gradientTo": "orange-100",
+          "image": "products/Burgers.png",
+          "items": [
+            {
+              "name": "Beef Burger",
+              "description": "PizzaG Special Beef Burger",
+              "image": "products/burgers/beef-burger.png",
+              "price": "Rs. 750",
+              "whatsapp": "Beef Burger - Rs. 750"
+            },
+            {
+              "name": "Stuff Burger",
+              "description": "PizzaG Special Stuff Burger",
+              "image": "products/burgers/stuff-burger.png",
+              "price": "Rs. 699",
+              "whatsapp": "Stuff Burger - Rs. 699"
+            },
+            {
+              "name": "Tower Burger",
+              "description": "PizzaG Special Tower Burger",
+              "image": "products/burgers/tower-burger.png",
+              "price": "Rs. 650",
+              "whatsapp": "Tower Burger - Rs. 650"
+            },
+            {
+              "name": "Smash Burger",
+              "description": "PizzaG Special Smash Burger",
+              "image": "products/burgers/smash-burger.png",
+              "price": "Rs. 550",
+              "whatsapp": "Smash Burger - Rs. 550"
+            }
+          ]
+        },
+        {
+          "title": "Other Burgers",
+          "icon": "fas fa-burger",
+          "borderColor": "orange-300",
+          "gradientFrom": "orange-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Burgers.png",
+          "items": [
+            {
+              "name": "Zinger Burger",
+              "description": "Crispy Zinger Burger",
+              "image": "products/burgers/zinger-burger.png",
+              "price": "Rs. 399",
+              "whatsapp": "Zinger Burger - Rs. 399"
+            },
+            {
+              "name": "Mini Crunch Burger",
+              "description": "Mini Crunchy Burger",
+              "image": "products/burgers/mini-crunch-burger.png",
+              "price": "Rs. 299",
+              "whatsapp": "Mini Crunch Burger - Rs. 299"
+            },
+            {
+              "name": "Chicken Cheese Burger",
+              "description": "Chicken & Cheese Burger",
+              "image": "products/burgers/chicken-cheese-burger.png",
+              "price": "Rs. 250",
+              "whatsapp": "Chicken Cheese Burger - Rs. 250"
+            },
+            {
+              "name": "Petty Burger",
+              "description": "Classic Petty Burger",
+              "image": "products/burgers/petty-burger.png",
+              "price": "Rs. 350",
+              "whatsapp": "Petty Burger - Rs. 350"
+            },
+            {
+              "name": "Chapli Kabab Burger",
+              "description": "Chapli Kabab Style Burger",
+              "image": "products/burgers/chapli-kabab-burger.png",
+              "price": "Rs. 299",
+              "whatsapp": "Chapli Kabab Burger - Rs. 299"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fries",
+      "sections": [
+        {
+          "title": "PizzaG Special Fries",
+          "icon": "fas fa-french-fries",
+          "borderColor": "yellow-300",
+          "gradientFrom": "yellow-100",
+          "gradientTo": "orange-100",
+          "image": "products/Fries.png",
+          "items": [
+            {
+              "name": "Pizza Fries",
+              "description": "Loaded Pizza Style Fries",
+              "image": "products/fries/Fries.png",
+              "price": "Rs. 599",
+              "whatsapp": "Pizza Fries - Rs. 599"
+            },
+            {
+              "name": "Zinger Fries",
+              "description": "Crispy Zinger Fries",
+              "image": "products/fries/zinger-fries.png",
+              "price": "Rs. 650",
+              "whatsapp": "Zinger Fries - Rs. 650"
+            },
+            {
+              "name": "Loaded Fries",
+              "description": "Fully Loaded Fries",
+              "image": "products/fries/loaded-fries.png",
+              "price": "Rs. 550",
+              "whatsapp": "Loaded Fries - Rs. 550"
+            },
+            {
+              "name": "Regular Fries",
+              "description": "Classic Regular Fries",
+              "image": "products/fries/regular-fries.png",
+              "price": "Rs. 199",
+              "whatsapp": "Regular Fries - Rs. 199"
+            },
+            {
+              "name": "Large Fries",
+              "description": "Large Portion Fries",
+              "image": "products/fries/large-fries.png",
+              "price": "Rs. 299",
+              "whatsapp": "Large Fries - Rs. 299"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "sections": [
+        {
+          "title": "Special Pizza",
+          "icon": "fas fa-pizza-slice",
+          "borderColor": "red-300",
+          "gradientFrom": "red-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Pizza.png",
+          "items": [
+            {
+              "name": "Special Pizza Hub",
+              "description": "Chicken cheese, onion, capsicum, olives, mushroom, sauce",
+              "image": "products/special-pizza/special-pizza-hub.png",
+              "sizes": [
+                { "size": "Medium", "price": "Rs. 1350" },
+                { "size": "Large", "price": "Rs. 1700" },
+                { "size": "X Large", "price": "Rs. 2500" }
+              ],
+              "whatsapp": "Special Pizza Hub"
+            },
+            {
+              "name": "Pizza Lazania",
+              "description": "Crunch chicken, onion, sausages, olives, cheese & sauce",
+              "image": "products/special-pizza/pizza-lasania.png",
+              "sizes": [
+                { "size": "Medium", "price": "Rs. 1400" },
+                { "size": "Large", "price": "Rs. 1750" },
+                { "size": "X Large", "price": "Rs. 2500" }
+              ],
+              "whatsapp": "Pizza Lazania"
+            },
+            {
+              "name": "Stuffed Crust Pizza",
+              "description": "Chicken cheese, onion, capsicum, mushroom, green olives & sauce",
+              "image": "products/special-pizza/stuffed-crust-pizza.png",
+              "sizes": [
+                { "size": "Medium", "price": "Rs. 1300" },
+                { "size": "Large", "price": "Rs. 1699" },
+                { "size": "X Large", "price": "Rs. 2599" }
+              ],
+              "whatsapp": "Stuffed Crust Pizza"
+            },
+            {
+              "name": "Square Pizza",
+              "description": "2 sauce chicken chunks, cheese, olives, jalapeno, capsicum",
+              "image": "products/special-pizza/square-pizza.png",
+              "sizes": [
+                { "size": "Medium", "price": "Rs. 800" },
+                { "size": "Large", "price": "Rs. 1400" },
+                { "size": "X Large", "price": "Rs. 1999" }
+              ],
+              "whatsapp": "Square Pizza"
+            },
+            {
+              "name": "Behari Kabab Pizza",
+              "description": "Chicken cheese, onion, jalapeno & ginger lemon kabab sauce",
+              "image": "products/special-pizza/behari-kabab-pizza.png",
+              "sizes": [
+                { "size": "Medium", "price": "Rs. 1300" },
+                { "size": "Large", "price": "Rs. 1600" },
+                { "size": "X Large", "price": "Rs. 2400" }
+              ],
+              "whatsapp": "Behari Kabab Pizza"
+            },
+            {
+              "name": "Kababish Pizza",
+              "description": "Chicken cheese, black olives, capsicum, onion & sauce",
+              "image": "products/special-pizza/kababish-pizza.png",
+              "sizes": [
+                { "size": "Medium", "price": "Rs. 1250" },
+                { "size": "Large", "price": "Rs. 1450" },
+                { "size": "X Large", "price": "Rs. 2200" }
+              ],
+              "whatsapp": "Kababish Pizza"
+            },
+            {
+              "name": "Malai Boti Pizza",
+              "description": "Malai boti chicken, capsicum, cheese, olives & sauce",
+              "image": "products/special-pizza/malai-boti-pizza.png",
+              "sizes": [
+                { "size": "Medium", "price": "Rs. 1200" },
+                { "size": "Large", "price": "Rs. 1500" },
+                { "size": "X Large", "price": "Rs. 2199" }
+              ],
+              "whatsapp": "Malai Boti Pizza"
+            },
+            {
+              "name": "Crown Crust Pizza",
+              "description": "Chicken cheese, black olives, onion, capsicum & sauce",
+              "image": "products/special-pizza/crown-crust-pizza.png",
+              "sizes": [
+                { "size": "Medium", "price": "Rs. 1200" },
+                { "size": "Large", "price": "Rs. 1450" },
+                { "size": "X Large", "price": "Rs. 2199" }
+              ],
+              "whatsapp": "Crown Crust Pizza"
+            },
+            {
+              "name": "Extreme Pizza",
+              "description": "Chicken cheese, green olives, capsicum & sauce",
+              "image": "products/special-pizza/extreme-pizza.png",
+              "sizes": [
+                { "size": "Medium", "price": "Rs. 1250" },
+                { "size": "Large", "price": "Rs. 1550" },
+                { "size": "X Large", "price": "Rs. 2199" }
+              ],
+              "whatsapp": "Extreme Pizza"
+            },
+            {
+              "name": "Creamy Pizza",
+              "description": "Creamy Special Pizza",
+              "image": "products/special-pizza/creamy-pizza.png",
+              "sizes": [
+                { "size": "Medium", "price": "Rs. 1200" },
+                { "size": "Large", "price": "Rs. 1500" },
+                { "size": "X Large", "price": "Rs. 2099" }
+              ],
+              "whatsapp": "Creamy Pizza"
+            },
+            {
+              "name": "Deep Pan Pizza",
+              "description": "Deep Pan Style Pizza",
+              "image": "products/special-pizza/deep-pan-pizza.png",
+              "price": "Rs. 1500",
+              "whatsapp": "Deep Pan Pizza - Rs. 1500"
+            },
+            {
+              "name": "Heart Pizza",
+              "description": "Heart Shaped Special Pizza",
+              "image": "products/special-pizza/heart-pizza.png",
+              "price": "Rs. 1000",
+              "whatsapp": "Heart Pizza - Rs. 1000"
+            }
+          ]
+        },
+        {
+          "title": "Regular Flavors",
+          "icon": "fas fa-pizza-slice",
+          "borderColor": "orange-300",
+          "gradientFrom": "orange-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Pizza.png",
+          "flavors": [
+            { "name": "Chicken Tikka", "image": "products/regular-pizza/Chicken-Tikka Pizza.png" },
+            { "name": "Chicken Fajita", "image": "products/regular-pizza/Chicken-Fajita Pizza.png" },
+            { "name": "Peri Peri Pizza", "image": "products/regular-pizza/Peri-Peri-Pizza.png" },
+            { "name": "Cheese Lover", "image": "products/regular-pizza/Cheese-Lover Pizza.png" },
+            { "name": "Peproni Pizza", "image": "products/regular-pizza/Peproni-Pizza.png" },
+            { "name": "Chicken Lover", "image": "products/regular-pizza/Chicken-Lover Pizza.png" },
+            { "name": "Chicken Supreme", "image": "products/regular-pizza/Chicken-Supreme-Pizza.png" },
+            { "name": "Chicken Tandoori", "image": "products/regular-pizza/Chicken-Tandoori Pizza.png" },
+            { "name": "Hot & Spicy Pizza", "image": "products/regular-pizza/Hot-Spicy-Pizza.png" }
+          ],
+          "sizes": [
+            { "size": "Small", "price": "Rs. 550" },
+            { "size": "Medium", "price": "Rs. 1050" },
+            { "size": "Large", "price": "Rs. 1350" },
+            { "size": "XL", "price": "Rs. 1999" }
+          ],
+          "items": [
+            {
+              "name": "Slice Pizza",
+              "description": "Single Slice Pizza",
+              "price": "Rs. 699",
+              "whatsapp": "Slice Pizza - Rs. 699"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "platters",
+      "sections": [
+        {
+          "title": "PizzaG Special Platters",
+          "icon": "fas fa-plate-wheat",
+          "borderColor": "purple-300",
+          "gradientFrom": "purple-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Platters.png",
+          "items": [
+            {
+              "name": "Arabic Platter",
+              "description": "6 Pcs Arabic, 4 Pcs Nuggets, With Fries & Dip Sauce",
+              "image": "products/platers/arabic-plater.png",
+              "price": "Rs. 999",
+              "whatsapp": "Arabic Platter - Rs. 999"
+            },
+            {
+              "name": "Special Cheesy Platter",
+              "description": "8 Pcs Spin Rolls, With Fries & Deep Sauce",
+              "image": "products/platers/cheesy-plater.png",
+              "price": "Rs. 1199",
+              "whatsapp": "Special Cheesy Platter - Rs. 1199"
+            },
+            {
+              "name": "Special Chicken Platter",
+              "description": "4 Pcs Italian Rolls, 4 Pcs Wings, With Fries & Dip Sauce",
+              "image": "products/platers/special-chicken.png",
+              "price": "Rs. 800",
+              "whatsapp": "Special Chicken Platter - Rs. 800"
+            },
+            {
+              "name": "Special Shawarma Platter",
+              "description": "4 Pcs Bread, With Chicken, With 2 Sauce",
+              "image": "products/platers/shawarma-plater.png",
+              "price": "Rs. 550",
+              "whatsapp": "Special Shawarma Platter - Rs. 550"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "sections": [
+        {
+          "title": "Calzone Chunks",
+          "icon": "fas fa-cookie",
+          "borderColor": "purple-300",
+          "gradientFrom": "purple-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Others.png",
+          "items": [
+            {
+              "name": "Calzone Chunks",
+              "description": "The Special Only Flavors Crispy & Topping With 2 Sauce, Chicken Cheese & Lettuce With Fries & Dip Sauce",
+              "price": "Rs. 999",
+              "whatsapp": "Calzone Chunks - Rs. 999"
+            }
+          ]
+        },
+        {
+          "title": "PASTA",
+          "icon": "fas fa-bowl-food",
+          "borderColor": "red-300",
+          "gradientFrom": "red-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Others.png",
+          "items": [
+            {
+              "name": "Alfredo Pasta",
+              "description": "Creamy Alfredo Pasta",
+              "image": "products/pasta/alfredo-paste.png",
+              "price": "Rs. 999",
+              "whatsapp": "Alfredo Pasta - Rs. 999"
+            },
+            {
+              "name": "Crunchy Pasta",
+              "description": "Crispy Crunchy Pasta",
+              "image": "products/pasta/crunch-paste.png",
+              "price": "Rs. 750",
+              "whatsapp": "Crunchy Pasta - Rs. 750"
+            },
+            {
+              "name": "Pizza Pasta",
+              "description": "Pizza Flavored Pasta",
+              "image": "products/pasta/pizza-pasta.png",
+              "price": "Rs. 599",
+              "whatsapp": "Pizza Pasta - Rs. 599"
+            }
+          ]
+        },
+        {
+          "title": "Sandwich",
+          "icon": "fas fa-bread-slice",
+          "borderColor": "green-300",
+          "gradientFrom": "green-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Others.png",
+          "items": [
+            {
+              "name": "PizzaG Special Sandwich",
+              "description": "Our Signature Sandwich",
+              "image": "products/sandwich/pizza-hub-speciel sandwich.png",
+              "price": "Rs. 850",
+              "whatsapp": "PizzaG Special Sandwich - Rs. 850"
+            },
+            {
+              "name": "Pizza Sandwich",
+              "description": "Pizza Style Sandwich",
+              "image": "products/sandwich/pizza-sndwich.png",
+              "price": "Rs. 750",
+              "whatsapp": "Pizza Sandwich - Rs. 750"
+            },
+            {
+              "name": "Mexican Sandwich",
+              "description": "Spicy Mexican Style",
+              "image": "products/sandwich/mexican-sndwich.png",
+              "price": "Rs. 650",
+              "whatsapp": "Mexican Sandwich - Rs. 650"
+            },
+            {
+              "name": "Euro Sandwich",
+              "description": "European Style",
+              "image": "products/sandwich/euro-sndwich.png",
+              "price": "Rs. 600",
+              "whatsapp": "Euro Sandwich - Rs. 600"
+            },
+            {
+              "name": "Cheese Chicken Sandwich",
+              "description": "Cheesy Chicken",
+              "image": "products/sandwich/cheese-chicken-sandwich.png",
+              "price": "Rs. 500",
+              "whatsapp": "Cheese Chicken Sandwich - Rs. 500"
+            }
+          ]
+        },
+        {
+          "title": "Pizza Toppings (Extra)",
+          "icon": "fas fa-plus-circle",
+          "borderColor": "gray-300",
+          "gradientFrom": "gray-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Others.png",
+          "items": [
+            {
+              "name": "Small Topping",
+              "description": "Extra topping for Small Pizza",
+              "price": "Rs. 100",
+              "whatsapp": "Small Pizza Topping - Rs. 100"
+            },
+            {
+              "name": "Medium Topping",
+              "description": "Extra topping for Medium Pizza",
+              "price": "Rs. 150",
+              "whatsapp": "Medium Pizza Topping - Rs. 150"
+            },
+            {
+              "name": "Large Topping",
+              "description": "Extra topping for Large Pizza",
+              "price": "Rs. 200",
+              "whatsapp": "Large Pizza Topping - Rs. 200"
+            },
+            {
+              "name": "XL Large Topping",
+              "description": "Extra topping for XL Large Pizza",
+              "price": "Rs. 250",
+              "whatsapp": "XL Large Pizza Topping - Rs. 250"
+            },
+            {
+              "name": "Dip Sauce Separate",
+              "description": "Extra Dip Sauce",
+              "price": "Rs. 50",
+              "whatsapp": "Dip Sauce Separate - Rs. 50"
+            },
+            {
+              "name": "Cheese Slice Separate",
+              "description": "Extra Cheese Slice",
+              "price": "Rs. 60",
+              "whatsapp": "Cheese Slice Separate - Rs. 60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "sections": [
+        {
+          "title": "Injected Broasted Piece",
+          "icon": "fas fa-drumstick-bite",
+          "borderColor": "red-300",
+          "gradientFrom": "red-100",
+          "gradientTo": "orange-100",
+          "image": "products/Chicken.png",
+          "items": [
+            {
+              "name": "Small Quarter",
+              "description": "2 Piece Chicken With Fries, With Dip Sauce & Bun",
+              "image": "products/chicken/small-quarter.png",
+              "price": "Rs. 600",
+              "whatsapp": "Small Quarter (2 Pcs Chicken) - Rs. 600"
+            },
+            {
+              "name": "Medium Quarter",
+              "description": "4 Piece Chicken With Fries, With Dip Sauce & Bun",
+              "image": "products/chicken/medium-quarter.png",
+              "price": "Rs. 1200",
+              "whatsapp": "Medium Quarter (4 Pcs Chicken) - Rs. 1200"
+            },
+            {
+              "name": "Large Quarter",
+              "description": "8 Piece Chicken With Fries, With Dip Sauce & Bun",
+              "image": "products/chicken/large-quarter.png",
+              "price": "Rs. 2000",
+              "whatsapp": "Large Quarter (8 Pcs Chicken) - Rs. 2000"
+            }
+          ]
+        },
+        {
+          "title": "Chicken Piece",
+          "icon": "fas fa-drumstick-bite",
+          "borderColor": "orange-300",
+          "gradientFrom": "orange-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Chicken.png",
+          "items": [
+            {
+              "name": "Full Leg Piece",
+              "description": "Crispy Full Leg",
+              "image": "products/chicken/full-leg-piece.png",
+              "price": "Rs. 400",
+              "whatsapp": "Full Leg Piece - Rs. 400"
+            },
+            {
+              "name": "Full Chest Piece",
+              "description": "Crispy Full Chest",
+              "image": "products/chicken/full-chest-piece.png",
+              "price": "Rs. 450",
+              "whatsapp": "Full Chest Piece - Rs. 450"
+            }
+          ]
+        },
+        {
+          "title": "HOT WINGS",
+          "icon": "fas fa-fire",
+          "borderColor": "red-300",
+          "gradientFrom": "red-100",
+          "gradientTo": "orange-100",
+          "image": "products/Chicken.png",
+          "items": [
+            {
+              "name": "Hot Shot (10 Pcs)",
+              "description": "Spicy Hot Wings",
+              "image": "products/chicken/hot-shot-(10-pcs).png",
+              "price": "Rs. 450",
+              "whatsapp": "Hot Shot 10 Pcs - Rs. 450"
+            },
+             {
+              "name": "Hot Wings (5 Pcs)",
+              "description": "Spicy Hot Wings",
+              "image": "products/chicken/hot-wings-(5-pcs).png",
+              "price": "Rs. 300",
+              "whatsapp": "Hot Wings 5 Pcs - Rs. 300"
+            },
+            {
+              "name": "Hot Wings (10 Pcs)",
+              "description": "Spicy Hot Wings",
+              "image": "products/chicken/hot-wings-(10-pcs).png",
+              "price": "Rs. 600",
+              "whatsapp": "Hot Wings 10 Pcs - Rs. 600"
+            },
+            {
+              "name": "Honey Wings (6 Pcs)",
+              "description": "Sweet Honey Glazed",
+              "image": "products/chicken/honey-wings-(6-pcs).png",
+              "price": "Rs. 400",
+              "whatsapp": "Honey Wings 6 Pcs - Rs. 400"
+            },
+            {
+              "name": "Grilled Wings (6 Pcs)",
+              "description": "Grilled to Perfection",
+              "image": "products/chicken/grilled-wings-(6-pcs).png",
+              "price": "Rs. 350",
+              "whatsapp": "Grilled Wings 6 Pcs - Rs. 350"
+            },
+            {
+              "name": "Grilled Wings (10 Pcs)",
+              "description": "Grilled to Perfection",
+              "image": "products/chicken/grilled-wings-(10-pcs).png",
+              "price": "Rs. 700",
+              "whatsapp": "Grilled Wings 10 Pcs - Rs. 700"
+            },
+            {
+              "name": "Nuggets (5 Pcs)",
+              "description": "Crispy Chicken Nuggets",
+              "image": "products/chicken/nuggets-(5-pcs).png",
+              "price": "Rs. 299",
+              "whatsapp": "Nuggets 5 Pcs - Rs. 299"
+            },
+            {
+              "name": "Nuggets (10 Pcs)",
+              "description": "Crispy Chicken Nuggets",
+              "image": "products/chicken/nuggets-(10-pcs).png",
+              "price": "Rs. 550",
+              "whatsapp": "Nuggets 10 Pcs - Rs. 550"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wraps",
+      "sections": [
+        {
+          "title": "WRAPS",
+          "icon": "fas fa-burrito",
+          "borderColor": "green-300",
+          "gradientFrom": "green-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Wraps.png",
+          "items": [
+            {
+              "name": "Crispy Wraps",
+              "description": "Crispy Chicken Wrap",
+              "image": "products/wraps/crispy-wraps.png",
+              "price": "Rs. 730",
+              "whatsapp": "Crispy Wraps - Rs. 730"
+            },
+            {
+              "name": "Zinger Wraps",
+              "description": "Zinger Chicken Wrap",
+              "image": "products/wraps/zinger-wraps.png",
+              "price": "Rs. 650",
+              "whatsapp": "Zinger Wraps - Rs. 650"
+            },
+            {
+              "name": "Cheesy Wraps",
+              "description": "Extra Cheese Wrap",
+              "image": "products/wraps/cheesy-wraps.png",
+              "price": "Rs. 499",
+              "whatsapp": "Cheesy Wraps - Rs. 499"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paratha",
+      "sections": [
+        {
+          "title": "Paratha Rolls",
+          "icon": "fas fa-bread-slice",
+          "borderColor": "yellow-300",
+          "gradientFrom": "yellow-100",
+          "gradientTo": "orange-100",
+          "image": "products/Paratha.png",
+          "items": [
+            {
+              "name": "Chicken Paratha Roll",
+              "description": "Stuffed with Chicken",
+              "image": "products/paratha/checken-paratha-roll.png",
+              "price": "Rs. 299",
+              "whatsapp": "Chicken Paratha Roll - Rs. 299"
+            },
+            {
+              "name": "Chicken Cheese Paratha",
+              "description": "Chicken & Cheese Stuffed",
+              "image": "products/paratha/chicken-chees-parathe.png",
+              "price": "Rs. 350",
+              "whatsapp": "Chicken Cheese Paratha - Rs. 350"
+            },
+            {
+              "name": "Zinger Paratha",
+              "description": "Zinger Stuffed Paratha",
+              "image": "products/paratha/zinger-paratha.png",
+              "price": "Rs. 400",
+              "whatsapp": "Zinger Paratha - Rs. 400"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shawarma",
+      "sections": [
+        {
+          "title": "Shawarma",
+          "icon": "fas fa-utensils",
+          "borderColor": "orange-300",
+          "gradientFrom": "orange-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Shawarma.png",
+          "items": [
+            {
+              "name": "Chicken Shawarma",
+              "description": "Classic Chicken Shawarma",
+              "image": "products/shawarma/chicken-shawarma.png",
+              "price": "Rs. 220",
+              "whatsapp": "Chicken Shawarma - Rs. 220"
+            },
+            {
+              "name": "Chicken Cheese Shawarma",
+              "description": "Cheesy Chicken Shawarma",
+              "image": "products/shawarma/chicken-cheese shawarma.png",
+              "price": "Rs. 350",
+              "whatsapp": "Chicken Cheese Shawarma - Rs. 350"
+            },
+            {
+              "name": "Zinger Shawarma",
+              "description": "Crispy Zinger Shawarma",
+              "image": "products/shawarma/zinger-shawarma.png",
+              "price": "Rs. 370",
+              "whatsapp": "Zinger Shawarma - Rs. 370"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deals",
+      "sections": [
+        {
+          "title": "Special Deals",
+          "icon": "fas fa-tags",
+          "borderColor": "green-400",
+          "gradientFrom": "green-100",
+          "gradientTo": "yellow-100",
+          "image": "products/Deals.png",
+          "items": [
+            {
+              "name": "Deal 1",
+              "description": "2 Small Pizza, 1 Ltr Cold Drink",
+              "image": "products/deals/deal-1.png",
+              "price": "Rs. 1100",
+              "whatsapp": "Deal 1 - Rs. 1100"
+            },
+            {
+              "name": "Deal 2",
+              "description": "1 Small Pizza, 1 Zinger Burger, 1 Regular Fries, 1 Ltr Cold Drink",
+              "image": "products/deals/deal-2.png",
+              "price": "Rs. 1199",
+              "whatsapp": "Deal 2 - Rs. 1199"
+            },
+            {
+              "name": "Deal 3",
+              "description": "1 Zinger Wrap, 6 Pcs Hot Wings, 1 NR Drink",
+              "image": "products/deals/deal-3.png",
+              "price": "Rs. 1000",
+              "whatsapp": "Deal 3 - Rs. 1000"
+            },
+            {
+              "name": "Deal 4",
+              "description": "5 Shawarma, 1 Ltr Cold Drink",
+              "image": "products/deals/deal-4.png",
+              "price": "Rs. 1099",
+              "whatsapp": "Deal 4 - Rs. 1099"
+            },
+            {
+              "name": "Deal 5",
+              "description": "3 Zinger Burger, 1 Large Fries, 1 Ltr Cold Drink",
+              "image": "products/deals/deal-5.png",
+              "price": "Rs. 1500",
+              "whatsapp": "Deal 5 - Rs. 1500"
+            },
+            {
+              "name": "Deal 6",
+              "description": "1 Large Pizza Regular, 1 Pasta, 1 Ltr Cold Drink",
+              "image": "products/deals/deal-6.png",
+              "price": "Rs. 1999",
+              "whatsapp": "Deal 6 - Rs. 1999"
+            },
+            {
+              "name": "Deal 7",
+              "description": "2 Medium Pizza (Regular Flavor), 1.5 Ltr Cold Drink",
+              "image": "products/deals/deal-7.png",
+              "price": "Rs. 2099",
+              "whatsapp": "Deal 7 - Rs. 2099"
+            },
+            {
+              "name": "Deal 8",
+              "description": "1 Large Pizza, 1 Medium Pizza, 1.5 Ltr Cold Drink",
+              "image": "products/deals/deal-8.png",
+              "price": "Rs. 2499",
+              "whatsapp": "Deal 8 - Rs. 2499"
+            },
+            {
+              "name": "Deal 9",
+              "description": "2 Large Pizza Special, 1.5 Ltr Cold Drink",
+              "image": "products/deals/deal-9.png",
+              "price": "Rs. 3000",
+              "whatsapp": "Deal 9 - Rs. 3000"
+            },
+            {
+              "name": "Deal 10 - Birthday Deal",
+              "description": "1 Large Pizza Regular, 1 Large Pizza Special, 3 Pcs Nuggets, 3 Pcs Hot Wings, 3 Pcs Oven Baked Wings, 1.5 Ltr Cold Drink",
+              "image": "products/deals/deal-10.png",
+              "price": "Rs. 3500",
+              "whatsapp": "Deal 10 Birthday Deal - Rs. 3500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beverages",
+      "sections": [
+        {
+          "title": "Beverages & Drinks",
+          "icon": "fas fa-glass-water",
+          "borderColor": "blue-300",
+          "gradientFrom": "blue-100",
+          "gradientTo": "red-100",
+          "image": "products/Beverages.png",
+          "items": [
+            {
+              "name": "Large Water",
+              "description": "Large Bottle",
+              "image": "products/beverages/large-water.png",
+              "price": "Rs. 100",
+              "whatsapp": "Large Water - Rs. 100"
+            },
+            {
+              "name": "Small Water",
+              "description": "Small Bottle",
+              "image": "products/beverages/small-water.png",
+              "price": "Rs. 50",
+              "whatsapp": "Small Water - Rs. 50"
+            },
+            {
+              "name": "Ten Pack",
+              "description": "Ten Pack Drink",
+              "image": "products/beverages/tin-pack.png",
+              "price": "Rs. 160",
+              "whatsapp": "Ten Pack - Rs. 160"
+            },
+            {
+              "name": "Sting",
+              "description": "Energy Drink",
+              "image": "products/beverages/sting-bottle.png",
+              "price": "Rs. 130",
+              "whatsapp": "Sting - Rs. 130"
+            },
+            {
+              "name": "NR Drink",
+              "description": "Non-Returnable Drink",
+              "image": "products/beverages/nr-bottle.png",
+              "price": "Rs. 100",
+              "whatsapp": "NR Drink - Rs. 100"
+            },
+            {
+              "name": "1 Ltr Drink",
+              "description": "1 Litre Cold Drink",
+              "image": "products/beverages/1-litter-bottle.jpeg",
+              "price": "Rs. 170",
+              "whatsapp": "1 Ltr Drink - Rs. 170"
+            },
+            {
+              "name": "1.5 Ltr Drink",
+              "description": "1.5 Litre Cold Drink",
+              "image": "products/beverages/1.5-litter-bottle.webp",
+              "price": "Rs. 220",
+              "whatsapp": "1.5 Ltr Drink - Rs. 220"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Robots.txt for Pizza Hub Kacha Khuh
+# https://pizzahubkk.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://pizzahubkk.com/sitemap.xml
+
+# Disallow API and system folders
+Disallow: /api/
+Disallow: /appdata/
+Disallow: /icons/
+Disallow: /oldindex.html/
+
+# Allow important files
+Allow: /manifest.json
+Allow: /service-worker.js
+Allow: /logo.jpeg
+
+# Crawl delay (optional - be nice to Google)
+Crawl-delay: 1

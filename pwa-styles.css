@@ -1,0 +1,346 @@
+/**
+ * Pizza Hub - PWA Install Banner Styles
+ * Custom styling for the Add to Home Screen feature
+ */
+
+/* Install Banner Animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Banner animate class */
+.pwa-banner-animate {
+    animation: slideUp 0.4s ease-out forwards;
+}
+
+/* Install Banner - Android Chrome */
+#pwa-install-banner {
+    position: fixed;
+    bottom: 80px; /* Above the bottom navigation */
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-width: 400px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    border: 2px solid #FFD700;
+    border-radius: 16px;
+    padding: 12px;
+    z-index: 55;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+#pwa-install-banner.hidden {
+    display: none;
+}
+
+/* Banner Content Layout */
+.pwa-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+/* App Icon in Banner */
+.pwa-banner-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Banner Text */
+.pwa-banner-text {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.pwa-banner-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFD700;
+    margin: 0 0 2px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pwa-banner-subtitle {
+    font-size: 11px;
+    color: #9ca3af;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Install Button */
+#pwa-install-btn {
+    background: #FFD700;
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+#pwa-install-btn:hover {
+    background: #FFC700;
+    transform: scale(1.02);
+}
+
+#pwa-install-btn:active {
+    transform: scale(0.98);
+}
+
+/* Close Button */
+#close-install-banner,
+#close-ios-banner {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #9ca3af;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+#close-install-banner:hover,
+#close-ios-banner:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* iOS Install Banner */
+#ios-install-banner {
+    position: fixed;
+    bottom: 80px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-width: 400px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    border: 2px solid #FFD700;
+    border-radius: 16px;
+    padding: 16px;
+    z-index: 55;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+#ios-install-banner.hidden {
+    display: none;
+}
+
+/* iOS Banner Content */
+.ios-banner-content {
+    text-align: center;
+}
+
+.ios-banner-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFD700;
+    margin: 0 0 12px 0;
+}
+
+.ios-banner-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.ios-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 12px 16px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.ios-step-number {
+    width: 28px;
+    height: 28px;
+    background: #FFD700;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.ios-step-text {
+    color: #fff;
+    font-size: 14px;
+}
+
+.ios-step-icon {
+    color: #FFD700;
+    font-size: 18px;
+}
+
+/* Share icon styling for iOS */
+.ios-share-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #FFD700;
+    border-radius: 6px;
+    color: #FFD700;
+    font-size: 12px;
+    vertical-align: middle;
+    margin: 0 4px;
+}
+
+/* Floating Install Button (alternative to banner) */
+.pwa-floating-btn {
+    position: fixed;
+    bottom: 90px;
+    right: 16px;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 55;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.pwa-floating-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(255, 215, 0, 0.5);
+}
+
+.pwa-floating-btn i {
+    font-size: 24px;
+    color: #000;
+}
+
+.pwa-floating-btn.hidden {
+    display: none;
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 360px) {
+    #pwa-install-banner,
+    #ios-install-banner {
+        left: 8px;
+        right: 8px;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .pwa-banner-content {
+        gap: 8px;
+    }
+
+    .pwa-banner-icon {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        border-radius: 8px;
+    }
+
+    .pwa-banner-title {
+        font-size: 13px;
+    }
+
+    .pwa-banner-subtitle {
+        font-size: 10px;
+    }
+
+    #pwa-install-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+        gap: 3px;
+    }
+
+    .ios-banner-title {
+        font-size: 14px;
+    }
+
+    .ios-step {
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    .ios-step-text {
+        font-size: 12px;
+    }
+
+    .ios-step-number {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+}
+
+/* Dark mode support (if needed) */
+@media (prefers-color-scheme: dark) {
+    #pwa-install-banner,
+    #ios-install-banner {
+        background: linear-gradient(135deg, #000000 0%, #111111 100%);
+    }
+}
+
+/* Standalone mode - hide install prompts */
+@media (display-mode: standalone) {
+    #pwa-install-banner,
+    #ios-install-banner,
+    .pwa-floating-btn {
+        display: none !important;
+    }
+}
