@@ -56,7 +56,7 @@
     function registerServiceWorker() {
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
+                navigator.serviceWorker.register('service-worker.js')
                     .then((registration) => {
                         console.log('[PWA] Service Worker registered:', registration.scope);
 
@@ -234,17 +234,16 @@
      * Check if app is already installed
      */
     function checkIfInstalled() {
-        // Check localStorage
-        if (localStorage.getItem('pwa-installed') === 'true') {
-            isInstalled = true;
-            return;
-        }
-
-        // Check if running in standalone mode (already installed)
+        // Only trust localStorage if actually running in standalone mode right now
+        // (prevents old/stale PizzaHub install flag from blocking the banner)
         if (isInStandaloneMode()) {
             isInstalled = true;
             localStorage.setItem('pwa-installed', 'true');
+            return;
         }
+
+        // Clear stale installed flag if not actually in standalone mode
+        localStorage.removeItem('pwa-installed');
     }
 
     /**
@@ -325,9 +324,19 @@
         init();
     }
 
-    // Expose functions globally for debugging
+    /**
+     * Force show banner regardless of installed/dismissed state
+     */
+    function forceShowBanner() {
+        if (!installBanner) return;
+        installBanner.classList.remove('hidden');
+        installBanner.classList.add('pwa-banner-animate');
+    }
+
+    // Expose functions globally
     window.PWAInstall = {
         showBanner: showInstallBanner,
+        forceShowBanner: forceShowBanner,
         hideBanner: hideInstallBanner,
         install: handleInstallClick,
         isInstalled: () => isInstalled,

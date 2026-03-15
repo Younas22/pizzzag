@@ -455,9 +455,9 @@ function renderCategory($cat) {
     <!-- ═══════════════════════════════════════ -->
     <!-- 2. HERO SECTION                        -->
     <!-- ═══════════════════════════════════════ -->
-    <section class="hero-section min-h-[80vh] flex items-center py-12 px-4">
+    <section class="hero-section min-h-[80vh] flex items-start pt-10 pb-12 px-4">
         <div class="max-w-7xl mx-auto w-full">
-            <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
 
                 <!-- Left: Text Content -->
                 <div class="flex-1 text-center lg:text-left">
@@ -860,12 +860,12 @@ function renderCategory($cat) {
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-[#FF671C]/10">
                     <img src="menu-a.jpg" alt="PizzaG Complete Menu Part 1"
-                         onclick="openImageModal('menu-b.jpg')"
+                         onclick="openMenuModal()"
                          class="w-full h-auto cursor-pointer hover:scale-[1.02] transition-transform duration-300">
                 </div>
                 <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-[#FF671C]/10">
                     <img src="menu-b.jpg" alt="PizzaG Complete Menu Part 2"
-                         onclick="openImageModal('menu-a.jpg')"
+                         onclick="openMenuModal()"
                          class="w-full h-auto cursor-pointer hover:scale-[1.02] transition-transform duration-300">
                 </div>
             </div>
@@ -1131,19 +1131,16 @@ function renderCategory($cat) {
                 if (iosBanner) {
                     iosBanner.classList.remove('hidden');
                     iosBanner.classList.add('pwa-banner-animate');
-                } else {
-                    alert('iOS par install karny ke liye:\n\n1. Safari mein Share button dabayein\n2. "Add to Home Screen" select karein\n3. "Add" par tap karein');
                 }
             } else {
-                if (window.PWAInstall && typeof window.PWAInstall.install === 'function') {
-                    window.PWAInstall.install();
+                // Always show banner — forceShowBanner bypasses installed/dismissed guards
+                if (window.PWAInstall && typeof window.PWAInstall.forceShowBanner === 'function') {
+                    window.PWAInstall.forceShowBanner();
                 } else {
                     const installBanner = document.getElementById('pwa-install-banner');
                     if (installBanner) {
                         installBanner.classList.remove('hidden');
                         installBanner.classList.add('pwa-banner-animate');
-                    } else {
-                        alert('App install karny ke liye browser menu mein "Install App" ya "Add to Home Screen" option use karein.');
                     }
                 }
             }
