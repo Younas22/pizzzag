@@ -351,7 +351,7 @@ function renderCategory($cat) {
         .menu-card .card-price span { font-size: inherit !important; }
 
         /* Tab pills */
-        .tab-pill { transition: all 0.25s ease; }
+        .tab-pill { transition: all 0.25s ease; padding: 5px 12px; font-size: 11px; }
         .tab-pill.active {
             background-color: #FF671C;
             color: #ffffff;
@@ -435,7 +435,7 @@ function renderCategory($cat) {
         .orange-glow { text-shadow: 0 0 20px rgba(255, 103, 28, 0.5); }
 
         @media (max-width: 640px) {
-            .tab-pill { padding: 0.35rem 0.7rem; font-size: 0.75rem; }
+            .tab-pill { padding: 4px 10px; font-size: 10px; }
         }
     </style>
 </head>
@@ -623,7 +623,6 @@ function renderCategory($cat) {
         </div>
     </section>
 
-    <div class="section-divider"></div>
 
     <!-- ═══════════════════════════════════════ -->
     <!-- 4. MENU SELECTION                      -->
@@ -825,9 +824,9 @@ function renderCategory($cat) {
 
             <div class="text-center mb-10">
                 <p class="text-[#f5f5f5]/50 font-semibold text-sm uppercase tracking-widest mb-2">Limited Time Offers</p>
-                <h2 class="text-3xl md:text-4xl font-black text-[#FF671C]">
-                    <i class="fas fa-fire mr-2 text-[#FFC700]"></i> PizzaG Hot Deals!
-                </h2>
+                
+                <h2 class="text-3xl md:text-4xl font-black text-[#f5f5f5]">PizzaG <span class="text-[#FF671C]">Hot Deals!</span></h2>
+
                 <p class="text-[#FFC700] font-semibold mt-2">Grab these amazing combos before they're gone!</p>
             </div>
 
@@ -918,9 +917,10 @@ function renderCategory($cat) {
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-8">
                 <p class="text-[#0a0a0a]/50 font-semibold text-sm uppercase tracking-widest mb-2">Browse Everything</p>
-                <h2 class="text-3xl md:text-4xl font-black text-[#0a0a0a]">
-                    Scan Our Complete Menu Below
-                </h2>
+                
+                <h2 class="text-3xl md:text-4xl font-black text-[#0a0a0a]">Scan Our Complete <span class="text-[#FF671C]">Menu Below</span></h2>
+
+                
                 <p class="text-[#0a0a0a]/60 mt-2">Tap any image to zoom in</p>
             </div>
 
@@ -947,9 +947,7 @@ function renderCategory($cat) {
 
             <div class="text-center mb-10">
                 <p class="text-[#FF671C] font-semibold text-sm uppercase tracking-widest mb-2">Our Place & Brand</p>
-                <h2 class="text-3xl md:text-4xl font-black text-[#f5f5f5]">
-                    <i class="fas fa-images mr-2 text-[#FFC700]"></i> PizzaG Gallery
-                </h2>
+                <h2 class="text-3xl md:text-4xl font-black text-[#f5f5f5]">PizzaG <span class="text-[#FF671C]">Gallery</span></h2>
                 <p class="text-[#f5f5f5]/50 mt-2">A glimpse of our restaurant, brand & team</p>
             </div>
 
@@ -1048,9 +1046,7 @@ function renderCategory($cat) {
 
             <div class="text-center mb-10">
                 <p class="text-[#f5f5f5]/40 font-semibold text-sm uppercase tracking-widest mb-2">Where We Deliver</p>
-                <h2 class="text-3xl md:text-4xl font-black text-[#FF671C]">
-                    <i class="fas fa-truck mr-2"></i> We Deliver To:
-                </h2>
+                <h2 class="text-3xl md:text-4xl font-black text-[#f5f5f5]">We <span class="text-[#FF671C]">Deliver To:</span></h2>
                 <p class="text-[#f5f5f5]/55 mt-3 text-base max-w-xl mx-auto">
                     PizzaG delivers to Kacha Khuh and surrounding areas including Gulshan Colony, Peer Colony, Hussain Chowk, and more.
                 </p>
@@ -1074,6 +1070,37 @@ function renderCategory($cat) {
         </div>
     </section>
 
+    
+    <div class="section-divider"></div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- 3b. LOCATION MAP                       -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="bg-[#0a0a0a] py-10 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-6">
+                <p class="text-[#FFC700] font-semibold text-sm uppercase tracking-widest mb-2">Find Us</p>
+                <h2 class="text-2xl md:text-3xl font-black text-[#f5f5f5]">Our <span class="text-[#FF671C]">Location</span></h2>
+            </div>
+            <div class="rounded-2xl overflow-hidden border-2 border-[#FF671C]/40 shadow-lg shadow-orange-900/20">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.2184375146057!2d72.13587107535821!3d30.373154574759763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393cad006686b7b9%3A0xdbe21bb764c0ad49!2spizza%20g!5e0!3m2!1sen!2s!4v1773565056052!5m2!1sen!2s"
+                    width="100%" height="320" style="border:0; display:block;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="mt-4 text-center">
+                <a href="https://maps.app.goo.gl/iLi6KqUoH4crMfPP9" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 bg-[#FF671C] hover:bg-orange-600 text-white font-bold px-5 py-2.5 rounded-xl transition-all duration-200 text-sm">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+    
     <!-- ═══════════════════════════════════════ -->
     <!-- 8. FOOTER                              -->
     <!-- ═══════════════════════════════════════ -->
@@ -1085,7 +1112,7 @@ function renderCategory($cat) {
                 <!-- Brand Column -->
                 <div class="md:col-span-1">
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="icons/pizzag-logo.png" alt="PizzaG" class="h-12 w-auto object-contain">
+                        <img src="icons/main-pizzag-logo.png" alt="PizzaG" class="h-20 w-auto object-contain">
                         <div>
                             <div class="font-black text-[#f5f5f5] text-lg">PizzaG</div>
                             <div class="text-[#FFC700] text-[10px] font-semibold">Delight in Every Bite...!</div>
@@ -1209,6 +1236,75 @@ function renderCategory($cat) {
             </a>
         </div>
     </nav>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- FLOATING LOCATION BUTTON (Mobile)      -->
+    <!-- ═══════════════════════════════════════ -->
+    <div id="float-location-wrap" class="md:hidden fixed z-[55]" style="left:0; top:50%; transform:translateY(-50%); user-select:none; touch-action:none;">
+        <!-- Close button -->
+        <button onclick="hideFloatLocation()"
+                style="position:absolute; top:-8px; right:-8px; width:18px; height:18px; border-radius:50%; background:#1a1a1a; border:1.5px solid #EA4335; color:#aaa; font-size:8px; display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:1;">
+            <i class="fas fa-times"></i>
+        </button>
+        <!-- Main button -->
+        <a id="float-location-btn" href="https://maps.app.goo.gl/iLi6KqUoH4crMfPP9" target="_blank" rel="noopener noreferrer"
+           style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; background:linear-gradient(180deg,#EA4335,#c5221f); color:#fff; font-weight:700; font-size:9px; padding:12px 7px; border-radius:0 10px 10px 0; box-shadow:3px 0 16px rgba(234,67,53,0.55); text-decoration:none; animation:pulse 2s infinite; letter-spacing:1px;">
+            <i class="fas fa-map-marker-alt" style="font-size:14px;"></i>
+            <span style="writing-mode:vertical-rl; transform:rotate(180deg);">Find Us on Map</span>
+        </a>
+    </div>
+
+    <script>
+        (function(){
+            const wrap = document.getElementById('float-location-wrap');
+            const btn  = document.getElementById('float-location-btn');
+            let dragging = false, startY = 0, startTop = 0, moved = false;
+
+            function getTop() {
+                return wrap.getBoundingClientRect().top;
+            }
+
+            function onStart(clientY) {
+                dragging = true;
+                moved = false;
+                startY = clientY;
+                startTop = getTop();
+                wrap.style.transform = 'none';
+                wrap.style.top = startTop + 'px';
+            }
+
+            function onMove(clientY) {
+                if (!dragging) return;
+                const diff = clientY - startY;
+                if (Math.abs(diff) > 4) moved = true;
+                let newTop = startTop + diff;
+                const maxTop = window.innerHeight - wrap.offsetHeight - 8;
+                newTop = Math.max(8, Math.min(newTop, maxTop));
+                wrap.style.top = newTop + 'px';
+            }
+
+            function onEnd() {
+                dragging = false;
+                if (moved) btn.addEventListener('click', stopLink, { once: true });
+            }
+
+            function stopLink(e) { e.preventDefault(); }
+
+            // Mouse
+            wrap.addEventListener('mousedown',  e => { if(e.target.closest('button')) return; onStart(e.clientY); });
+            document.addEventListener('mousemove', e => onMove(e.clientY));
+            document.addEventListener('mouseup',   () => onEnd());
+
+            // Touch
+            wrap.addEventListener('touchstart', e => { if(e.target.closest('button')) return; onStart(e.touches[0].clientY); }, { passive: true });
+            document.addEventListener('touchmove',  e => onMove(e.touches[0].clientY), { passive: true });
+            document.addEventListener('touchend',   () => onEnd());
+        })();
+
+        function hideFloatLocation() {
+            document.getElementById('float-location-wrap').style.display = 'none';
+        }
+    </script>
 
     <!-- ═══════════════════════════════════════ -->
     <!-- MENU IMAGES MODAL                      -->
