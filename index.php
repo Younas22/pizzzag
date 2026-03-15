@@ -38,15 +38,15 @@ function renderItemCard($item, $section) {
 
     return '
     <div class="menu-card bg-[#111111] rounded-xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C] transition-all duration-300">
-        <div class="h-48 flex items-center justify-center overflow-hidden bg-[#1a1a1a]">
+        <div class="card-img flex items-center justify-center overflow-hidden bg-[#1a1a1a]">
             <img src="' . $image . '" alt="' . $name . '" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
         </div>
-        <div class="p-4">
-            <h4 class="text-base font-bold text-[#FF671C] mb-1">' . $name . '</h4>
+        <div class="card-body">
+            <h4 class="card-title font-bold text-[#FF671C] mb-0.5 truncate">' . $name . '</h4>
             ' . $descHtml . '
-            <div class="flex justify-between items-center mt-2">
-                ' . $priceHtml . '
-                <button onclick="orderWhatsapp(\'' . $whatsappJs . '\')" class="bg-[#FF671C] hover:bg-orange-600 text-white px-3 py-2 rounded-lg transition-all duration-200 flex items-center gap-1 text-sm font-semibold">
+            <div class="flex justify-between items-center mt-1">
+                <div class="card-price font-bold text-[#FFC700] leading-tight">' . $priceHtml . '</div>
+                <button onclick="orderWhatsapp(\'' . $whatsappJs . '\')" class="card-btn bg-[#FF671C] hover:bg-orange-600 text-white rounded-lg transition-all duration-200 flex items-center gap-1 font-semibold whitespace-nowrap">
                     <i class="fab fa-whatsapp"></i> Order
                 </button>
             </div>
@@ -92,15 +92,14 @@ function renderSection($section, $isFirst = true) {
 
             $html .= '
             <div class="menu-card bg-[#111111] rounded-xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C] transition-all duration-300">
-                <div class="h-48 flex items-center justify-center overflow-hidden bg-[#1a1a1a]">
+                <div class="card-img flex items-center justify-center overflow-hidden bg-[#1a1a1a]">
                     <img src="' . $flavorImage . '" alt="' . $flavorName . '" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
                 </div>
-                <div class="p-4">
-                    <h4 class="text-base font-bold text-[#FF671C] mb-1">' . $flavorName . '</h4>
-                    <p class="text-gray-400 text-xs mb-2">' . $flavorName . ' Pizza</p>
-                    <div class="flex justify-between items-center mt-2">
-                        <span class="text-lg font-bold text-[#FFC700]">' . $priceRange . '</span>
-                        <button onclick="orderWhatsapp(\'' . $whatsappJs . '\')" class="bg-[#FF671C] hover:bg-orange-600 text-white px-3 py-2 rounded-lg transition-all duration-200 flex items-center gap-1 text-sm font-semibold">
+                <div class="card-body">
+                    <h4 class="card-title font-bold text-[#FF671C] mb-0.5 truncate">' . $flavorName . '</h4>
+                    <div class="flex justify-between items-center mt-1">
+                        <span class="card-price font-bold text-[#FFC700] leading-tight">' . $priceRange . '</span>
+                        <button onclick="orderWhatsapp(\'' . $whatsappJs . '\')" class="card-btn bg-[#FF671C] hover:bg-orange-600 text-white rounded-lg transition-all duration-200 flex items-center gap-1 font-semibold whitespace-nowrap">
                             <i class="fab fa-whatsapp"></i> Order
                         </button>
                     </div>
@@ -313,15 +312,43 @@ function renderCategory($cat) {
         /* Menu grid */
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 1.25rem;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
         }
-        @media (max-width: 640px) {
+        @media (min-width: 1024px) {
             .menu-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-columns: repeat(6, 1fr);
                 gap: 0.75rem;
             }
         }
+        @media (max-width: 640px) {
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.6rem;
+            }
+        }
+        /* Card image responsive */
+        .menu-card .card-img { height: 10rem; }
+        @media (min-width: 1024px) { .menu-card .card-img { height: 7.5rem; } }
+        @media (max-width: 640px)  { .menu-card .card-img { height: 6.5rem; } }
+        /* Card inner padding */
+        .menu-card .card-body { padding: 0.75rem; }
+        @media (min-width: 1024px) { .menu-card .card-body { padding: 0.5rem; } }
+        @media (max-width: 640px)  { .menu-card .card-body { padding: 0.4rem; } }
+        /* Card title */
+        .menu-card .card-title { font-size: 0.8rem; }
+        @media (min-width: 1024px) { .menu-card .card-title { font-size: 0.7rem; } }
+        @media (max-width: 640px)  { .menu-card .card-title { font-size: 0.7rem; } }
+        /* Card price */
+        .menu-card .card-price { font-size: 0.75rem; }
+        @media (min-width: 1024px) { .menu-card .card-price { font-size: 0.65rem; } }
+        @media (max-width: 640px)  { .menu-card .card-price { font-size: 0.65rem; } }
+        /* Order button */
+        .menu-card .card-btn { font-size: 0.7rem; padding: 0.3rem 0.5rem; }
+        @media (min-width: 1024px) { .menu-card .card-btn { font-size: 0.6rem; padding: 0.25rem 0.4rem; } }
+        @media (max-width: 640px)  { .menu-card .card-btn { font-size: 0.6rem; padding: 0.25rem 0.35rem; } }
+        /* Price span override */
+        .menu-card .card-price span { font-size: inherit !important; }
 
         /* Tab pills */
         .tab-pill { transition: all 0.25s ease; }
@@ -804,17 +831,21 @@ function renderCategory($cat) {
                 <p class="text-[#FFC700] font-semibold mt-2">Grab these amazing combos before they're gone!</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6">
                 <!-- Deal Card 1 -->
                 <div class="bg-[#111111] rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-xl">
                     <img src="offer/1.png" alt="PizzaG Special Deal 1" class="w-full h-auto">
-                    <div class="p-4 flex flex-col sm:flex-row gap-3">
-                        <a href="tel:03058223131"
-                           class="flex-1 cta-phone text-white text-sm font-bold py-3 px-4 rounded-xl transition-all hover:scale-105 shadow-lg flex items-center justify-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 0305-8223131
-                        </a>
+                    <div class="p-2 md:p-3 flex flex-col gap-1.5">
+                        <div class="flex gap-1.5">
+                            <a href="tel:03058223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
+                                <i class="fas fa-phone-alt"></i> <span>0305-8223131</span>
+                            </a>
+                            <a href="tel:03018223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
+                                <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
+                            </a>
+                        </div>
                         <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%201" target="_blank"
-                           class="flex-1 bg-green-600 hover:bg-green-700 text-white text-sm font-bold py-3 px-4 rounded-xl transition-all hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                           class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
                         </a>
                     </div>
@@ -823,13 +854,17 @@ function renderCategory($cat) {
                 <!-- Deal Card 2 -->
                 <div class="bg-[#111111] rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-xl">
                     <img src="offer/2.png" alt="PizzaG Special Deal 2" class="w-full h-auto">
-                    <div class="p-4 flex flex-col sm:flex-row gap-3">
-                        <a href="tel:03058223131"
-                           class="flex-1 cta-phone text-white text-sm font-bold py-3 px-4 rounded-xl transition-all hover:scale-105 shadow-lg flex items-center justify-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 0305-8223131
-                        </a>
+                    <div class="p-2 md:p-3 flex flex-col gap-1.5">
+                        <div class="flex gap-1.5">
+                            <a href="tel:03058223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
+                                <i class="fas fa-phone-alt"></i> <span>0305-8223131</span>
+                            </a>
+                            <a href="tel:03018223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
+                                <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
+                            </a>
+                        </div>
                         <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%202" target="_blank"
-                           class="flex-1 bg-green-600 hover:bg-green-700 text-white text-sm font-bold py-3 px-4 rounded-xl transition-all hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                           class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
                         </a>
                     </div>
@@ -838,13 +873,17 @@ function renderCategory($cat) {
                 <!-- Deal Card 3 -->
                 <div class="bg-[#111111] rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-xl">
                     <img src="offer/3.png" alt="PizzaG Special Deal 3" class="w-full h-auto">
-                    <div class="p-4 flex flex-col sm:flex-row gap-3">
-                        <a href="tel:03058223131"
-                           class="flex-1 cta-phone text-white text-sm font-bold py-3 px-4 rounded-xl transition-all hover:scale-105 shadow-lg flex items-center justify-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 0305-8223131
-                        </a>
+                    <div class="p-2 md:p-3 flex flex-col gap-1.5">
+                        <div class="flex gap-1.5">
+                            <a href="tel:03058223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
+                                <i class="fas fa-phone-alt"></i> <span>0305-8223131</span>
+                            </a>
+                            <a href="tel:03018223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
+                                <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
+                            </a>
+                        </div>
                         <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%203" target="_blank"
-                           class="flex-1 bg-green-600 hover:bg-green-700 text-white text-sm font-bold py-3 px-4 rounded-xl transition-all hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                           class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
                         </a>
                     </div>
@@ -853,13 +892,17 @@ function renderCategory($cat) {
                 <!-- Deal Card 4 -->
                 <div class="bg-[#111111] rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-xl">
                     <img src="offer/4.png" alt="PizzaG Special Deal 4" class="w-full h-auto">
-                    <div class="p-4 flex flex-col sm:flex-row gap-3">
-                        <a href="tel:03058223131"
-                           class="flex-1 cta-phone text-white text-sm font-bold py-3 px-4 rounded-xl transition-all hover:scale-105 shadow-lg flex items-center justify-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 0305-8223131
-                        </a>
+                    <div class="p-2 md:p-3 flex flex-col gap-1.5">
+                        <div class="flex gap-1.5">
+                            <a href="tel:03058223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
+                                <i class="fas fa-phone-alt"></i> <span>0305-8223131</span>
+                            </a>
+                            <a href="tel:03018223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
+                                <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
+                            </a>
+                        </div>
                         <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%204" target="_blank"
-                           class="flex-1 bg-green-600 hover:bg-green-700 text-white text-sm font-bold py-3 px-4 rounded-xl transition-all hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                           class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
                         </a>
                     </div>
@@ -897,7 +940,108 @@ function renderCategory($cat) {
     </section>
 
     <!-- ═══════════════════════════════════════ -->
-    <!-- 7. DELIVERY AREAS                      -->
+    <!-- 7. GALLERY                             -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="gallery" class="bg-[#0a0a0a] py-14 px-4">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center mb-10">
+                <p class="text-[#FF671C] font-semibold text-sm uppercase tracking-widest mb-2">Our Place & Brand</p>
+                <h2 class="text-3xl md:text-4xl font-black text-[#f5f5f5]">
+                    <i class="fas fa-images mr-2 text-[#FFC700]"></i> PizzaG Gallery
+                </h2>
+                <p class="text-[#f5f5f5]/50 mt-2">A glimpse of our restaurant, brand & team</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
+
+                <!-- Entrance -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=450&fit=crop" alt="PizzaG Entrance"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-door-open text-[#FFC700]"></i> Entrance</span>
+                    </div>
+                </div>
+
+                <!-- Inside View -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=450&fit=crop" alt="PizzaG Inside"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-chair text-[#FFC700]"></i> Inside View</span>
+                    </div>
+                </div>
+
+                <!-- Outside View -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&h=450&fit=crop" alt="PizzaG Outside"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-store text-[#FFC700]"></i> Outside View</span>
+                    </div>
+                </div>
+
+                <!-- Seating Area -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=450&fit=crop" alt="PizzaG Seating"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-couch text-[#FFC700]"></i> Seating Area</span>
+                    </div>
+                </div>
+
+                <!-- Team Uniform -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&h=450&fit=crop" alt="PizzaG Uniform"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-tshirt text-[#FFC700]"></i> Team Uniform</span>
+                    </div>
+                </div>
+
+                <!-- Website -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=450&fit=crop" alt="PizzaG Website"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-globe text-[#FFC700]"></i> Website</span>
+                    </div>
+                </div>
+
+                <!-- Pizza Special -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=450&fit=crop" alt="PizzaG Signature Pizza"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-pizza-slice text-[#FFC700]"></i> Signature Pizza</span>
+                    </div>
+                </div>
+
+                <!-- Food Spread -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=450&fit=crop" alt="PizzaG Food"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-utensils text-[#FFC700]"></i> Our Food</span>
+                    </div>
+                </div>
+
+                <!-- Night Ambiance -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&h=450&fit=crop" alt="PizzaG Night Ambiance"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-moon text-[#FFC700]"></i> Night Ambiance</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- 8. DELIVERY AREAS                      -->
     <!-- ═══════════════════════════════════════ -->
     <section id="delivery-areas" class="bg-[#0a0a0a] py-14 px-4">
         <div class="max-w-7xl mx-auto">
