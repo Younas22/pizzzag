@@ -4,7 +4,7 @@
   "description": "Order delicious pizza from PizzaG - Premium Pizza Delivery on Main GT Road. Delight in Every Bite...!",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#0a0a0a",
+  "background_color": "#FF671C",
   "theme_color": "#FF671C",
   "orientation": "portrait-primary",
   "scope": "./",
