@@ -1,5 +1,5 @@
 /**
- * Pizza Hub - PWA Install Banner Styles
+ * PizzaG - PWA Install Banner Styles
  * Custom styling for the Add to Home Screen feature
  */
 
@@ -38,12 +38,12 @@
     width: auto;
     max-width: 400px;
     margin: 0 auto;
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
-    border: 2px solid #FFD700;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    border: 2px solid #FF671C;
     border-radius: 16px;
     padding: 12px;
     z-index: 55;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 40px rgba(255, 103, 28, 0.25);
     box-sizing: border-box;
 }
 
@@ -65,7 +65,7 @@
     height: 44px;
     min-width: 44px;
     border-radius: 10px;
-    border: 2px solid #FFD700;
+    border: 2px solid #FF671C;
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -80,7 +80,7 @@
 .pwa-banner-title {
     font-size: 14px;
     font-weight: 700;
-    color: #FFD700;
+    color: #FF671C;
     margin: 0 0 2px 0;
     white-space: nowrap;
     overflow: hidden;
@@ -89,7 +89,7 @@
 
 .pwa-banner-subtitle {
     font-size: 11px;
-    color: #9ca3af;
+    color: #aaaaaa;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -98,8 +98,8 @@
 
 /* Install Button */
 #pwa-install-btn {
-    background: #FFD700;
-    color: #000;
+    background: #FF671C;
+    color: #fff;
     border: none;
     padding: 8px 12px;
     border-radius: 8px;
@@ -115,7 +115,7 @@
 }
 
 #pwa-install-btn:hover {
-    background: #FFC700;
+    background: #e55a14;
     transform: scale(1.02);
 }
 
@@ -129,7 +129,7 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
     border: none;
     color: #9ca3af;
     width: 28px;
@@ -145,8 +145,8 @@
 
 #close-install-banner:hover,
 #close-ios-banner:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    background: rgba(255, 103, 28, 0.2);
+    color: #FF671C;
 }
 
 /* iOS Install Banner */
@@ -158,12 +158,12 @@
     width: auto;
     max-width: 400px;
     margin: 0 auto;
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
-    border: 2px solid #FFD700;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    border: 2px solid #FF671C;
     border-radius: 16px;
     padding: 16px;
     z-index: 55;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 40px rgba(255, 103, 28, 0.25);
     box-sizing: border-box;
 }
 
@@ -179,7 +179,7 @@
 .ios-banner-title {
     font-size: 18px;
     font-weight: 700;
-    color: #FFD700;
+    color: #FF671C;
     margin: 0 0 12px 0;
 }
 
@@ -194,17 +194,18 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    background: rgba(255, 215, 0, 0.1);
+    background: rgba(255, 103, 28, 0.08);
     padding: 12px 16px;
     border-radius: 10px;
     text-align: left;
+    border: 1px solid rgba(255, 103, 28, 0.2);
 }
 
 .ios-step-number {
     width: 28px;
     height: 28px;
-    background: #FFD700;
-    color: #000;
+    background: #FF671C;
+    color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -220,7 +221,7 @@
 }
 
 .ios-step-icon {
-    color: #FFD700;
+    color: #FF671C;
     font-size: 18px;
 }
 
@@ -231,9 +232,9 @@
     justify-content: center;
     width: 24px;
     height: 24px;
-    border: 2px solid #FFD700;
+    border: 2px solid #FF671C;
     border-radius: 6px;
-    color: #FFD700;
+    color: #FF671C;
     font-size: 12px;
     vertical-align: middle;
     margin: 0 4px;
@@ -246,10 +247,10 @@
     right: 16px;
     width: 56px;
     height: 56px;
-    background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+    background: linear-gradient(135deg, #FF671C 0%, #e55a14 100%);
     border: none;
     border-radius: 50%;
-    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 4px 20px rgba(255, 103, 28, 0.45);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -261,12 +262,12 @@
 
 .pwa-floating-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 30px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 6px 30px rgba(255, 103, 28, 0.6);
 }
 
 .pwa-floating-btn i {
     font-size: 24px;
-    color: #000;
+    color: #fff;
 }
 
 .pwa-floating-btn.hidden {
@@ -325,14 +326,6 @@
         width: 24px;
         height: 24px;
         font-size: 12px;
-    }
-}
-
-/* Dark mode support (if needed) */
-@media (prefers-color-scheme: dark) {
-    #pwa-install-banner,
-    #ios-install-banner {
-        background: linear-gradient(135deg, #000000 0%, #111111 100%);
     }
 }
 

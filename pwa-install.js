@@ -301,7 +301,8 @@
     function showInstallSuccess() {
         // Create a toast notification
         const toast = document.createElement('div');
-        toast.className = 'fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 flex items-center space-x-2';
+        toast.className = 'fixed bottom-24 left-1/2 transform -translate-x-1/2 text-white px-6 py-3 rounded-lg shadow-lg z-50 flex items-center space-x-2';
+        toast.style.cssText = 'background:#FF671C; box-shadow:0 4px 20px rgba(255,103,28,0.4); border:1px solid rgba(255,103,28,0.6);';
         toast.innerHTML = `
             <i class="fas fa-check-circle"></i>
             <span>PizzaG installed successfully!</span>

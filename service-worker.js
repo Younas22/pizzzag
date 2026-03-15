@@ -3,9 +3,9 @@
  * Handles caching for offline functionality
  */
 
-const CACHE_NAME = 'pizzag-v2';
-const STATIC_CACHE = 'pizzag-static-v2';
-const DYNAMIC_CACHE = 'pizzag-dynamic-v2';
+const CACHE_NAME = 'pizzag-v3';
+const STATIC_CACHE = 'pizzag-static-v3';
+const DYNAMIC_CACHE = 'pizzag-dynamic-v3';
 
 // Files to cache immediately on install
 const STATIC_ASSETS = [
@@ -65,8 +65,8 @@ self.addEventListener('activate', (event) => {
                 return Promise.all(
                     cacheNames
                         .filter((name) => {
-                            // Delete any cache that doesn't match current version
-                            return name.startsWith('pizzag-') &&
+                            // Delete any cache that doesn't match current version (including old pizza-hub-* caches)
+                            return name !== CACHE_NAME &&
                                    name !== STATIC_CACHE &&
                                    name !== DYNAMIC_CACHE;
                         })
