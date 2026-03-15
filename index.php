@@ -851,15 +851,7 @@ function renderCategory($cat) {
                 <!-- Deal Card 1 -->
                 <div class="bg-[#111111] rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-xl">
                     <img src="offer/1.png" alt="PizzaG Special Deal 1" class="w-full h-auto">
-                    <div class="p-2 md:p-3 flex flex-col gap-1.5">
-                        <div class="flex gap-1.5">
-                            <a href="tel:03058223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
-                                <i class="fas fa-phone-alt"></i> <span>0305-8223131</span>
-                            </a>
-                            <a href="tel:03018223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
-                                <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
-                            </a>
-                        </div>
+                    <div class="p-2 md:p-3">
                         <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%201" target="_blank"
                            class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
@@ -870,15 +862,7 @@ function renderCategory($cat) {
                 <!-- Deal Card 2 -->
                 <div class="bg-[#111111] rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-xl">
                     <img src="offer/2.png" alt="PizzaG Special Deal 2" class="w-full h-auto">
-                    <div class="p-2 md:p-3 flex flex-col gap-1.5">
-                        <div class="flex gap-1.5">
-                            <a href="tel:03058223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
-                                <i class="fas fa-phone-alt"></i> <span>0305-8223131</span>
-                            </a>
-                            <a href="tel:03018223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
-                                <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
-                            </a>
-                        </div>
+                    <div class="p-2 md:p-3">
                         <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%202" target="_blank"
                            class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
@@ -889,15 +873,7 @@ function renderCategory($cat) {
                 <!-- Deal Card 3 -->
                 <div class="bg-[#111111] rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-xl">
                     <img src="offer/3.png" alt="PizzaG Special Deal 3" class="w-full h-auto">
-                    <div class="p-2 md:p-3 flex flex-col gap-1.5">
-                        <div class="flex gap-1.5">
-                            <a href="tel:03058223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
-                                <i class="fas fa-phone-alt"></i> <span>0305-8223131</span>
-                            </a>
-                            <a href="tel:03018223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
-                                <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
-                            </a>
-                        </div>
+                    <div class="p-2 md:p-3">
                         <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%203" target="_blank"
                            class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
@@ -908,15 +884,7 @@ function renderCategory($cat) {
                 <!-- Deal Card 4 -->
                 <div class="bg-[#111111] rounded-2xl overflow-hidden border border-[#FF671C]/20 hover:border-[#FF671C]/60 transition-all duration-300 shadow-xl">
                     <img src="offer/4.png" alt="PizzaG Special Deal 4" class="w-full h-auto">
-                    <div class="p-2 md:p-3 flex flex-col gap-1.5">
-                        <div class="flex gap-1.5">
-                            <a href="tel:03058223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
-                                <i class="fas fa-phone-alt"></i> <span>0305-8223131</span>
-                            </a>
-                            <a href="tel:03018223131" class="flex-1 cta-phone text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1">
-                                <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
-                            </a>
-                        </div>
+                    <div class="p-2 md:p-3">
                         <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%204" target="_blank"
                            class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
