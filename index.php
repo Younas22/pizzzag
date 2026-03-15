@@ -458,16 +458,16 @@ function renderCategory($cat) {
 
             <!-- Mobile Center: Order Now Numbers -->
             <div class="flex lg:hidden flex-col items-center flex-1 px-2">
-                <span class="text-[9px] font-black uppercase tracking-[0.2em] text-[#FF671C] mb-0.5 flex items-center gap-1">
+                <span class="text-[11px] font-black uppercase tracking-[0.2em] text-[#FF671C] mb-0.5 flex items-center gap-1">
                     <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#FF671C] animate-pulse"></span>
                     Order Now
                     <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#FF671C] animate-pulse"></span>
                 </span>
-                <a href="tel:03058223131" class="text-[#FFC700] font-extrabold text-[11px] leading-tight hover:text-white transition flex items-center gap-1">
-                    <i class="fas fa-phone-alt text-[8px] text-[#FF671C]"></i> 0305-8223131
+                <a href="tel:03058223131" class="text-[#FFC700] font-extrabold text-[14px] leading-tight hover:text-white transition flex items-center gap-1">
+                    <i class="fas fa-phone-alt text-[10px] text-[#FF671C]"></i> 0305-8223131
                 </a>
-                <a href="tel:03018223131" class="text-[#FFC700] font-extrabold text-[11px] leading-tight hover:text-white transition flex items-center gap-1">
-                    <i class="fas fa-phone-alt text-[8px] text-[#FF671C]"></i> 0301-8223131
+                <a href="tel:03018223131" class="text-[#FFC700] font-extrabold text-[14px] leading-tight hover:text-white transition flex items-center gap-1">
+                    <i class="fas fa-phone-alt text-[10px] text-[#FF671C]"></i> 0301-8223131
                 </a>
             </div>
 
