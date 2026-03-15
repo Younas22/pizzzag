@@ -429,6 +429,21 @@ function renderCategory($cat) {
                 </div>
             </a>
 
+            <!-- Mobile Center: Order Now Numbers -->
+            <div class="flex lg:hidden flex-col items-center flex-1 px-2">
+                <span class="text-[9px] font-black uppercase tracking-[0.2em] text-[#FF671C] mb-0.5 flex items-center gap-1">
+                    <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#FF671C] animate-pulse"></span>
+                    Order Now
+                    <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#FF671C] animate-pulse"></span>
+                </span>
+                <a href="tel:03058223131" class="text-[#FFC700] font-extrabold text-[11px] leading-tight hover:text-white transition flex items-center gap-1">
+                    <i class="fas fa-phone-alt text-[8px] text-[#FF671C]"></i> 0305-8223131
+                </a>
+                <a href="tel:03018223131" class="text-[#FFC700] font-extrabold text-[11px] leading-tight hover:text-white transition flex items-center gap-1">
+                    <i class="fas fa-phone-alt text-[8px] text-[#FF671C]"></i> 0301-8223131
+                </a>
+            </div>
+
             <!-- Desktop Nav Links -->
             <nav class="hidden lg:flex items-center space-x-6 text-sm font-semibold">
                 <a href="#" class="text-[#f5f5f5] hover:text-[#FF671C] transition">Home</a>
@@ -440,8 +455,17 @@ function renderCategory($cat) {
 
             <!-- Actions -->
             <div class="flex items-center gap-2">
-                <a href="tel:03058223131" class="hidden md:flex items-center gap-2 bg-[#111111] border border-[#f5f5f5]/20 text-[#f5f5f5] font-semibold text-sm px-3 py-2 rounded-lg hover:border-[#FF671C] transition">
-                    <i class="fas fa-phone text-[#FF671C]"></i> 0305-8223131
+                <a href="tel:03058223131" class="hidden md:flex flex-col items-start bg-[#111111] border border-[#f5f5f5]/20 px-3 py-2 rounded-lg hover:border-[#FF671C] transition">
+                    <span class="text-[9px] text-[#FF671C] font-bold uppercase tracking-widest leading-none mb-0.5">Call Us</span>
+                    <span class="flex items-center gap-1.5 text-[#f5f5f5] font-black text-sm leading-tight">
+                        <i class="fas fa-phone text-[#FF671C] text-xs"></i> 0305-8223131
+                    </span>
+                </a>
+                <a href="tel:03018223131" class="hidden md:flex flex-col items-start bg-[#111111] border border-[#f5f5f5]/20 px-3 py-2 rounded-lg hover:border-[#FF671C] transition">
+                    <span class="text-[9px] text-[#FF671C] font-bold uppercase tracking-widest leading-none mb-0.5">Call Us</span>
+                    <span class="flex items-center gap-1.5 text-[#f5f5f5] font-black text-sm leading-tight">
+                        <i class="fas fa-phone text-[#FF671C] text-xs"></i> 0301-8223131
+                    </span>
                 </a>
                 <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
                    class="flex items-center gap-2 bg-[#FF671C] hover:bg-orange-600 text-white font-bold px-4 py-2 rounded-full transition-all duration-200 shadow-lg shadow-orange-900/30">
