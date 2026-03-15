@@ -140,32 +140,32 @@ function renderCategory($cat) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PizzaG | Best Pizza Delivery on Kacha Khuh Railway Station | Order Online | 0305-8223131</title>
+    <title>PizzaG Kacha Khuh – Best Pizza & Fast Food Near Railway Station</title>
 
     <!-- Primary SEO Meta Tags -->
-    <meta name="description" content="PizzaG - Order fresh & delicious pizza, burgers, shawarma, wraps & more. Fast delivery on Kacha Khuh Railway Station. Call now: 0305-8223131. Best deals & affordable prices! Delight in Every Bite...!">
-    <meta name="keywords" content="PizzaG, pizza delivery, best pizza GT Road, pizza near me, burger delivery, shawarma, fast food delivery, online food order, pizza deals, 03058223131, 03058223131">
+    <meta name="description" content="Enjoy fresh and delicious pizza at PizzaG Kacha Khuh, located near Kacha Khuh Railway Station. Order the best pizza, burgers, shawarma, wings, and fast food with free home delivery in Kacha Khuh. Call now for hot and fresh pizza at Pizza G Kacha Khuh.">
+    <meta name="keywords" content="PizzaG, Pizza G, PizzaG Kacha Khuh, Pizza G Kacha Khuh, pizza in kacha khuh, pizza kacha khuh, best pizza in kacha khuh, pizza delivery kacha khuh, fast food kacha khuh, kacha khuh pizza shop, pizza near kacha khuh railway station, best fast food in kacha khuh, pizza near me, burger delivery, shawarma, wings, fast food delivery, 03058223131">
     <meta name="author" content="PizzaG">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
-    <link rel="canonical" href="https://pizzahubkk.com/">
+    <link rel="canonical" href="https://pizzag.com/">
 
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="restaurant">
-    <meta property="og:site_name" content="PizzaG">
-    <meta property="og:title" content="PizzaG | Best Pizza Delivery | Order Online">
-    <meta property="og:description" content="Order fresh & delicious pizza, burgers, shawarma & more from PizzaG. Fast delivery on Kacha Khuh Railway Station. Call: 0305-8223131">
-    <meta property="og:image" content="https://pizzahubkk.com/icons/pizzag-logo.png">
+    <meta property="og:site_name" content="PizzaG Kacha Khuh">
+    <meta property="og:title" content="PizzaG Kacha Khuh | Best Pizza, Burgers & Fast Food in Kacha Khuh">
+    <meta property="og:description" content="PizzaG Kacha Khuh is a popular fast food restaurant near Kacha Khuh Railway Station. Order pizza, burgers, shawarma, wings with free home delivery. Call: 0305-8223131">
+    <meta property="og:image" content="https://pizzag.com/icons/pizzag-logo.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://pizzahubkk.com/">
+    <meta property="og:url" content="https://pizzag.com/">
     <meta property="og:locale" content="en_PK">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PizzaG | Best Pizza Delivery">
-    <meta name="twitter:description" content="Order fresh pizza, burgers, shawarma & more. Fast delivery on Kacha Khuh Railway Station. Call: 0305-8223131">
-    <meta name="twitter:image" content="https://pizzahubkk.com/icons/pizzag-logo.png">
+    <meta name="twitter:title" content="PizzaG Kacha Khuh | Best Pizza & Fast Food Near Railway Station">
+    <meta name="twitter:description" content="Order fresh pizza, burgers, shawarma & wings at PizzaG Kacha Khuh. Free home delivery near Kacha Khuh Railway Station. Call: 0305-8223131">
+    <meta name="twitter:image" content="https://pizzag.com/icons/pizzag-logo.png">
 
     <!-- Geographic Meta Tags -->
     <meta name="geo.region" content="PK-PB">
@@ -174,7 +174,7 @@ function renderCategory($cat) {
     <meta name="ICBM" content="31.5204, 74.3587">
 
     <!-- Contact Information -->
-    <meta name="contact" content="0305-8223131, 0305-8223131">
+    <meta name="contact" content="0301-8223131, 0305-8223131">
     <meta name="reply-to" content="pizzag@gmail.com">
 
     <!-- PWA Meta Tags -->
@@ -221,41 +221,42 @@ function renderCategory($cat) {
     {
         "@context": "https://schema.org",
         "@type": "Restaurant",
-        "name": "PizzaG",
-        "alternateName": "PizzaG Restaurant",
-        "description": "Best pizza delivery on Kacha Khuh Railway Station. Fresh & delicious pizza, burgers, shawarma, wraps and more. Fast delivery with affordable prices. Delight in Every Bite...!",
-        "url": "https://pizzahubkk.com/",
-        "logo": "https://pizzahubkk.com/icons/pizzag-logo.png",
-        "image": ["https://pizzahubkk.com/icons/pizzag-logo.png"],
-        "telephone": ["+92-305-8223131", "+92-305-8223131"],
-        "priceRange": "$$",
-        "servesCuisine": ["Pizza", "Fast Food", "Pakistani", "Italian"],
+        "name": "PizzaG Kacha Khuh",
+        "alternateName": "Pizza G",
+        "description": "PizzaG Kacha Khuh is a popular fast food restaurant located near Kacha Khuh Railway Station, Punjab, known for its delicious pizzas, burgers, shawarma, wings, and fast food deals. PizzaG offers dine-in, takeaway, and free home delivery within 4 KM in Kacha Khuh.",
+        "url": "https://pizzag.com",
+        "logo": "https://pizzag.com/icons/pizzag-logo.png",
+        "image": ["https://pizzag.com/icons/pizzag-logo.png"],
+        "telephone": "+923058223131",
+        "priceRange": "PKR",
+        "servesCuisine": ["Pizza", "Fast Food", "Burgers", "Shawarma"],
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Kacha Khuh Railway Station",
+            "streetAddress": "Opp Railway Phattak, Abdul Hakeem More",
             "addressLocality": "Kacha Khuh",
             "addressRegion": "Punjab",
             "addressCountry": "PK"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 31.5204,
-            "longitude": 74.3587
+            "latitude": "",
+            "longitude": ""
         },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-                "opens": "11:00",
-                "closes": "01:00"
-            }
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "11:00",
+            "closes": "01:00"
+        },
+        "sameAs": [
+            "https://wa.me/923018223131",
+            "https://www.facebook.com/people/Pizza-G/61574665626405"
         ],
-        "sameAs": ["https://wa.me/923058223131"],
         "potentialAction": {
             "@type": "OrderAction",
             "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order",
+                "urlTemplate": "https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order",
                 "actionPlatform": [
                     "https://schema.org/DesktopWebPlatform",
                     "https://schema.org/MobileWebPlatform"
@@ -450,9 +451,9 @@ function renderCategory($cat) {
             <!-- Logo + Brand -->
             <a href="#" class="flex items-center space-x-3 flex-shrink-0">
                 <img src="icons/main-pizzag-logo.png" alt="PizzaG Logo" class="h-16 md:h-20 w-auto object-contain">
-                <div class="hidden sm:block">
-                    <h1 class="text-xl md:text-2xl font-black text-[#f5f5f5] leading-none">PizzaG</h1>
-                    <p class="text-[10px] text-[#FFC700] font-semibold tracking-wide">Delight in Every Bite...!</p>
+                <div class="hidden sm:block leading-none">
+                    <h1 class="text-xl md:text-2xl font-black text-[#FF671C] leading-none">PizzaG</h1>
+                    <p class="text-[10px] text-[#FFC700] font-semibold tracking-wide -mt-0.5">Delight in Every Bite...!</p>
                 </div>
             </a>
 
@@ -494,7 +495,7 @@ function renderCategory($cat) {
                         <i class="fas fa-phone text-[#FF671C] text-xs"></i> 0301-8223131
                     </span>
                 </a>
-                <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
+                <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
                    class="flex items-center gap-2 bg-[#FF671C] hover:bg-orange-600 text-white font-bold px-4 py-2 rounded-full transition-all duration-200 shadow-lg shadow-orange-900/30">
                     <i class="fab fa-whatsapp"></i>
                     <span class="hidden sm:inline text-sm">Order Now</span>
@@ -512,21 +513,27 @@ function renderCategory($cat) {
 
                 <!-- Left: Text Content -->
                 <div class="flex-1 text-center lg:text-left">
-                    <p class="text-[#FFC700] font-semibold text-sm uppercase tracking-widest mb-3">Premium Fast-Casual · Since 2024</p>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#f5f5f5] leading-tight mb-4">
-                        PizzaG — Your <br>
-                        <span class="text-[#FF671C] orange-glow">Ultimate</span> Pizza Fix
+                    <p class="text-[#FFC700] font-semibold text-sm uppercase tracking-widest mb-3">Premium Fast-Casual Fast Food · Since 2024</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#FF671C] leading-tight mb-2">
+                        PizzaG — Best <br>
+                        <span class="text-[#f5f5f5] orange-glow">Pizza in Kacha Khuh</span>
                     </h1>
                     <p class="text-[#f5f5f5]/70 text-lg md:text-xl mb-3 leading-relaxed">
-                        Premium Fast Food at Kacha Khuh Railway Station
+                        Your Ultimate Pizza &amp; Fast Food Destination
+                    </p>
+                    <p class="text-[#f5f5f5]/60 text-sm md:text-base mb-2 leading-relaxed font-semibold">
+                        Hot, Fresh &amp; Cheesy Pizza Near Kacha Khuh Railway Station
+                    </p>
+                    <p class="text-[#f5f5f5]/55 text-sm mb-5 leading-relaxed">
+                        At PizzaG Kacha Khuh, enjoy freshly baked pizzas, juicy burgers, crispy wings, shawarma, fries, and delicious fast food made with premium ingredients. Whether you're searching for pizza near me in Kacha Khuh, pizza delivery in Kacha Khuh, or the best fast food in Kacha Khuh, Pizza G is the place locals love.
                     </p>
                     <p class="text-[#FFC700] font-bold text-xl md:text-2xl mb-8 italic">
-                        "Delight in Every Bite...!"
+                        "Delight in Every Bite!"
                     </p>
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                        <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
+                        <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
                            class="inline-flex items-center justify-center gap-2 bg-[#FF671C] hover:bg-orange-600 text-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-orange-900/40 hover:scale-105">
                             <i class="fab fa-whatsapp"></i> Order Online Now
                         </a>
@@ -537,10 +544,11 @@ function renderCategory($cat) {
                     </div>
 
                     <!-- Quick Info -->
-                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start text-sm text-[#f5f5f5]/60">
-                        <span><i class="fas fa-map-marker-alt text-[#FF671C] mr-1"></i> Kacha Khuh Railway Station</span>
-                        <span><i class="fas fa-phone text-[#FF671C] mr-1"></i> 0305-8223131</span>
-                        <span><i class="fas fa-clock text-[#FF671C] mr-1"></i> 11:00 AM – 1:00 AM</span>
+                    <div class="mt-8 flex flex-col gap-2 justify-center lg:justify-start text-sm text-[#f5f5f5]/60">
+                        <span><i class="fas fa-map-marker-alt text-[#FF671C] mr-1"></i> Opp. Railway Phattak, Abdul Hakeem More, Kacha Khuh Railway Station</span>
+                        <span><i class="fas fa-phone text-[#FF671C] mr-1"></i> Call: 0305-8223131 &nbsp;|&nbsp; <i class="fab fa-whatsapp text-green-500 mr-1"></i> WhatsApp: 0301-8223131</span>
+                        <span><i class="fas fa-clock text-[#FF671C] mr-1"></i> Open Daily: 11:00 AM – 1:00 AM</span>
+                        <span><i class="fas fa-motorcycle text-[#FF671C] mr-1"></i> Free Home Delivery</span>
                     </div>
                 </div>
 
@@ -566,17 +574,23 @@ function renderCategory($cat) {
                     <h2 class="text-3xl md:text-4xl font-black text-[#f5f5f5] mb-6">
                         The Story Behind <span class="text-[#FF671C]">PizzaG</span>
                     </h2>
-                    <p class="text-[#f5f5f5]/75 text-base md:text-lg leading-relaxed mb-5">
-                        PizzaG is a bold, flavour-forward fast-casual restaurant born in 2024 at Kacha Khuh Railway Station.
-                        We believe that every bite deserves to be a delight — which is why we craft every pizza,
-                        burger, and shawarma with the freshest ingredients and uncompromising passion.
+                    <p class="text-[#f5f5f5]/75 text-base md:text-lg leading-relaxed mb-4">
+                        PizzaG Kacha Khuh is a modern fast-casual restaurant launched in 2024 near Kacha Khuh Railway Station — created with one mission: to serve the best pizza and fast food in Kacha Khuh.
                     </p>
-                    <p class="text-[#f5f5f5]/75 text-base md:text-lg leading-relaxed mb-8">
-                        From our signature pizzas to loaded burgers, wraps, and more — PizzaG is your
-                        one-stop destination for premium fast food delivered right to your door.
+                    <p class="text-[#f5f5f5]/75 text-base md:text-lg leading-relaxed mb-6">
+                        We prepare our pizzas, burgers, shawarma, wraps, wings, and pasta using fresh ingredients, rich sauces, and perfectly baked dough. Hot, delicious food — every time.
                     </p>
 
-                    <div class="flex flex-wrap gap-6 mb-8">
+                    <!-- Mission -->
+                    <div class="bg-[#1a1a1a] border border-[#FF671C]/20 rounded-xl p-4 mb-6">
+                        <p class="text-[#FFC700] font-semibold text-sm uppercase tracking-widest mb-1">Our Mission</p>
+                        <p class="text-[#f5f5f5]/70 text-sm leading-relaxed">
+                            To serve fresh, flavorful, and affordable fast food in Kacha Khuh — with a great dining &amp; delivery experience every day.
+                        </p>
+                    </div>
+
+                    <!-- Quick Facts -->
+                    <div class="flex flex-wrap gap-6 mb-6">
                         <div class="text-center">
                             <div class="text-3xl font-black text-[#FF671C]">2024</div>
                             <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Established</div>
@@ -586,8 +600,8 @@ function renderCategory($cat) {
                             <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Menu Items</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-black text-[#FF671C]">20+</div>
-                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Delivery Areas</div>
+                            <div class="text-3xl font-black text-[#FF671C]">4 KM</div>
+                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Free Delivery</div>
                         </div>
                     </div>
 
@@ -596,9 +610,9 @@ function renderCategory($cat) {
                            class="inline-flex items-center justify-center gap-2 bg-[#FF671C] hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-xl transition-all duration-200">
                             <i class="fas fa-phone"></i> Call Us Now
                         </a>
-                        <a href="mailto:pizzag@gmail.com"
+                        <a href="https://wa.me/923018223131" target="_blank"
                            class="inline-flex items-center justify-center gap-2 border-2 border-[#FF671C] text-[#FF671C] hover:bg-[#FF671C] hover:text-white font-bold px-6 py-3 rounded-xl transition-all duration-200">
-                            <i class="fas fa-envelope"></i> Email Us
+                            <i class="fab fa-whatsapp"></i> WhatsApp
                         </a>
                     </div>
                 </div>
@@ -606,7 +620,6 @@ function renderCategory($cat) {
                 <!-- Right: Logo / Image -->
                 <div class="flex-shrink-0 flex flex-col items-center gap-6">
                     <div class="relative">
-                        
                         <img src="icons/pizzag-logo.png" alt="PizzaG Logo"
                              class="relative z-10 w-56 md:w-72 h-auto object-contain drop-shadow-2xl">
                     </div>
@@ -614,9 +627,13 @@ function renderCategory($cat) {
                     <div class="bg-[#1a1a1a] border border-[#FF671C]/20 rounded-xl p-5 text-center max-w-xs">
                         <i class="fas fa-map-marker-alt text-[#FF671C] text-xl mb-2"></i>
                         <p class="text-[#f5f5f5]/80 text-sm leading-relaxed">
-                            <span class="text-[#FF671C] font-semibold">Kacha Khuh Railway Station</span><br>
-                            Kacha Khuh, Punjab
+                            <span class="text-[#FF671C] font-semibold">Opp. Railway Phattak, Abdul Hakeem More</span><br>
+                            Kacha Khuh Railway Station, Punjab
                         </p>
+                        <div class="mt-3 pt-3 border-t border-[#FF671C]/10 text-[#f5f5f5]/60 text-xs">
+                            <div><i class="fas fa-phone text-[#FF671C] mr-1"></i> 0305-8223131</div>
+                            <div class="mt-1"><i class="fas fa-clock text-[#FF671C] mr-1"></i> 11:00 AM – 1:00 AM Daily</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -843,7 +860,7 @@ function renderCategory($cat) {
                                 <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
                             </a>
                         </div>
-                        <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%201" target="_blank"
+                        <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%201" target="_blank"
                            class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
                         </a>
@@ -862,7 +879,7 @@ function renderCategory($cat) {
                                 <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
                             </a>
                         </div>
-                        <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%202" target="_blank"
+                        <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%202" target="_blank"
                            class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
                         </a>
@@ -881,7 +898,7 @@ function renderCategory($cat) {
                                 <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
                             </a>
                         </div>
-                        <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%203" target="_blank"
+                        <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%203" target="_blank"
                            class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
                         </a>
@@ -900,7 +917,7 @@ function renderCategory($cat) {
                                 <i class="fas fa-phone-alt"></i> <span>0301-8223131</span>
                             </a>
                         </div>
-                        <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%204" target="_blank"
+                        <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order%20Deal%204" target="_blank"
                            class="w-full bg-green-600 hover:bg-green-700 text-white text-[10px] md:text-xs font-bold py-1.5 md:py-2 rounded-lg flex items-center justify-center gap-1.5">
                             <i class="fab fa-whatsapp"></i> Order on WhatsApp
                         </a>
@@ -1113,12 +1130,21 @@ function renderCategory($cat) {
                 <div class="md:col-span-1">
                     <div class="flex items-center gap-3 mb-4">
                         <img src="icons/main-pizzag-logo.png" alt="PizzaG" class="h-20 w-auto object-contain">
-                        <div>
-                            <div class="font-black text-[#f5f5f5] text-lg">PizzaG</div>
-                            <div class="text-[#FFC700] text-[10px] font-semibold">Delight in Every Bite...!</div>
+                        <div class="leading-none">
+                            <div class="font-black text-[#FF671C] text-lg">PizzaG</div>
+                            <div class="text-[#FFC700] text-[10px] font-semibold uppercase tracking-widest -mt-0.5">Delight in Every Bite!</div>
                         </div>
                     </div>
-                    <p class="text-[#f5f5f5]/50 text-sm leading-relaxed">Premium fast food at Kacha Khuh Railway Station. Fresh, bold, and delivered fast.</p>
+                    <p class="text-[#f5f5f5]/50 text-sm leading-relaxed mb-4">
+                        Your ultimate pizza &amp; fast food destination at Kacha Khuh Railway Station. Fresh ingredients, bold flavours, fast delivery.
+                    </p>
+                    <div class="inline-flex items-center gap-2 bg-[#FF671C]/15 border border-[#FF671C]/50 rounded-xl px-4 py-3">
+                        <i class="fas fa-motorcycle text-[#FF671C] text-2xl"></i>
+                        <div>
+                            <div class="text-[#FF671C] font-black text-lg leading-tight">Free Delivery</div>
+                            <div class="text-[#f5f5f5]/60 text-xs">All Delivery Areas — Always Free</div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Quick Links -->
@@ -1148,7 +1174,7 @@ function renderCategory($cat) {
                             </a>
                         </p>
                         <p>
-                            <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
+                            <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
                                class="text-[#f5f5f5]/60 hover:text-[#FF671C] transition flex items-center gap-2">
                                 <i class="fab fa-whatsapp text-green-500"></i> Chat on WhatsApp
                             </a>
@@ -1166,8 +1192,8 @@ function renderCategory($cat) {
                     <h4 class="text-[#f5f5f5] font-bold text-base mb-4">Our Location</h4>
                     <p class="text-[#f5f5f5]/60 text-sm leading-relaxed mb-4">
                         <i class="fas fa-map-marker-alt text-[#FF671C] mr-1"></i>
-                        Kacha Khuh Railway Station<br>
-                        Kacha Khuh, Punjab
+                        Opp. Railway Phattak, Abdul Hakeem More<br>
+                        Kacha Khuh Railway Station, Punjab
                     </p>
 
                     <h4 class="text-[#f5f5f5] font-bold text-base mb-3">Install Our App</h4>
@@ -1195,7 +1221,7 @@ function renderCategory($cat) {
             <!-- Bottom Bar -->
             <div class="border-t border-[#f5f5f5]/10 pt-6 text-center">
                 <p class="text-[#f5f5f5]/40 text-sm">
-                    &copy; 2026 <span class="text-[#FF671C] font-bold">PizzaG</span>. All rights reserved. | Delight in Every Bite...!
+                    &copy; 2026 <span class="text-[#FF671C] font-bold">PizzaG</span>. All rights reserved. | Delight in Every Bite!
                 </p>
                 <p class="text-[#f5f5f5]/25 text-xs mt-1">
                     Powered by <a href="https://younasdev.com/about" target="_blank" rel="noopener" class="hover:text-[#FF671C] transition">YounusDev</a>
@@ -1221,7 +1247,7 @@ function renderCategory($cat) {
                 <i class="fas fa-utensils text-xl"></i>
                 <span class="text-[10px] mt-1 font-bold">Menu</span>
             </button>
-            <a href="https://wa.me/923058223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
+            <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
                class="flex flex-col items-center text-green-500 hover:text-green-400 transition px-3 py-1">
                 <i class="fab fa-whatsapp text-xl"></i>
                 <span class="text-[10px] mt-1 font-semibold">Order</span>
@@ -1352,7 +1378,7 @@ function renderCategory($cat) {
 
         function orderWhatsapp(item) {
             const message = `Hi PizzaG! I would like to order: ${item}`;
-            window.open(`https://wa.me/923058223131?text=${encodeURIComponent(message)}`, '_blank');
+            window.open(`https://wa.me/923018223131?text=${encodeURIComponent(message)}`, '_blank');
         }
 
         function openMenuModal() {
