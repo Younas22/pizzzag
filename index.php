@@ -524,9 +524,9 @@ function renderCategory($cat) {
                     <p class="hidden md:block text-[#f5f5f5]/60 text-sm md:text-base mb-2 leading-relaxed font-semibold">
                         Hot, Fresh &amp; Cheesy Pizza Near Kacha Khuh Railway Station
                     </p>
-                    <p class="hidden md:block text-[#f5f5f5]/55 text-sm mb-5 leading-relaxed">
+                    <!-- <p class="hidden md:block text-[#f5f5f5]/55 text-sm mb-5 leading-relaxed">
                         At PizzaG Kacha Khuh, enjoy freshly baked pizzas, juicy burgers, crispy wings, shawarma, fries, and delicious fast food made with premium ingredients. Whether you're searching for pizza near me in Kacha Khuh, pizza delivery in Kacha Khuh, or the best fast food in Kacha Khuh, Pizza G is the place locals love.
-                    </p>
+                    </p> -->
                     <p class="text-[#FFC700] font-bold text-xl md:text-2xl mb-8 italic">
                         "Delight in Every Bite!"
                     </p>
@@ -534,21 +534,23 @@ function renderCategory($cat) {
                     <!-- CTA Buttons -->
                     <div class="flex flex-row gap-3 justify-center lg:justify-start">
                         <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
-                           class="inline-flex items-center justify-center gap-2 bg-[#FF671C] hover:bg-orange-600 text-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-orange-900/40 hover:scale-105">
+                           class="inline-flex items-center justify-center gap-2 bg-[#FF671C] hover:bg-orange-600 text-white font-bold text-sm md:text-lg px-4 py-2 md:px-8 md:py-4 rounded-xl transition-all duration-200 shadow-xl shadow-orange-900/40 hover:scale-105">
                             <i class="fab fa-whatsapp"></i> <span class="hidden sm:inline">Order Online Now</span><span class="sm:hidden">Order</span>
                         </a>
                         <a href="#menu"
-                           class="inline-flex items-center justify-center gap-2 border-2 border-[#FF671C] text-[#FF671C] hover:bg-[#FF671C] hover:text-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-200">
+                           class="inline-flex items-center justify-center gap-2 border-2 border-[#FF671C] text-[#FF671C] hover:bg-[#FF671C] hover:text-white font-bold text-sm md:text-lg px-4 py-2 md:px-8 md:py-4 rounded-xl transition-all duration-200">
                             <i class="fas fa-utensils"></i> <span class="hidden sm:inline">View Menu</span><span class="sm:hidden">Menu</span>
                         </a>
                     </div>
 
                     <!-- Quick Info -->
                     <div class="mt-8 flex flex-col gap-2 justify-center lg:justify-start text-sm text-[#f5f5f5]/60">
-                        <span><i class="fas fa-map-marker-alt text-[#FF671C] mr-1"></i> Opp. Railway Phattak, Abdul Hakeem More, Kacha Khuh Railway Station</span>
-                        <span><i class="fas fa-phone text-[#FF671C] mr-1"></i> Call: 0305-8223131 &nbsp;|&nbsp; <i class="fab fa-whatsapp text-green-500 mr-1"></i> WhatsApp: 0301-8223131</span>
-                        <span><i class="fas fa-clock text-[#FF671C] mr-1"></i> Open Daily: 11:00 AM – 1:00 AM</span>
-                        <span><i class="fas fa-motorcycle text-[#FF671C] mr-1"></i> Free Home Delivery</span>
+                        <span class="hidden md:inline"><i class="fas fa-map-marker-alt text-[#FF671C] mr-1"></i> Opp. Railway Phattak, Abdul Hakeem More, Kacha Khuh Railway Station</span>
+                        <span class="hidden md:inline"><i class="fas fa-phone text-[#FF671C] mr-1"></i> Call: 0305-8223131 &nbsp;|&nbsp; <i class="fab fa-whatsapp text-green-500 mr-1"></i> WhatsApp: 0301-8223131</span>
+                        <span class="flex flex-row items-center justify-center lg:justify-start gap-4">
+                            <span><i class="fas fa-clock text-[#FF671C] mr-1"></i> Open Daily: 11:00 AM – 1:00 AM</span>
+                            <span><i class="fas fa-motorcycle text-[#FF671C] mr-1"></i> Free Home Delivery</span>
+                        </span>
                     </div>
                 </div>
 
@@ -560,86 +562,6 @@ function renderCategory($cat) {
             </div>
         </div>
     </section>
-
-    <!-- ═══════════════════════════════════════ -->
-    <!-- 3. ABOUT US                            -->
-    <!-- ═══════════════════════════════════════ -->
-    <section id="about-us" class="bg-[#111111] py-16 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col lg:flex-row items-center gap-12">
-
-                <!-- Left: Text -->
-                <div class="flex-1">
-                    <p class="text-[#FFC700] font-semibold text-sm uppercase tracking-widest mb-3">Who We Are</p>
-                    <h2 class="text-3xl md:text-4xl font-black text-[#f5f5f5] mb-6">
-                        The Story Behind <span class="text-[#FF671C]">PizzaG</span>
-                    </h2>
-                    <p class="text-[#f5f5f5]/75 text-base md:text-lg leading-relaxed mb-4">
-                        PizzaG Kacha Khuh is a modern fast-casual restaurant launched in 2024 near Kacha Khuh Railway Station — created with one mission: to serve the best pizza and fast food in Kacha Khuh.
-                    </p>
-                    <p class="text-[#f5f5f5]/75 text-base md:text-lg leading-relaxed mb-6">
-                        We prepare our pizzas, burgers, shawarma, wraps, wings, and pasta using fresh ingredients, rich sauces, and perfectly baked dough. Hot, delicious food — every time.
-                    </p>
-
-                    <!-- Mission -->
-                    <div class="bg-[#1a1a1a] border border-[#FF671C]/20 rounded-xl p-4 mb-6">
-                        <p class="text-[#FFC700] font-semibold text-sm uppercase tracking-widest mb-1">Our Mission</p>
-                        <p class="text-[#f5f5f5]/70 text-sm leading-relaxed">
-                            To serve fresh, flavorful, and affordable fast food in Kacha Khuh — with a great dining &amp; delivery experience every day.
-                        </p>
-                    </div>
-
-                    <!-- Quick Facts -->
-                    <div class="flex flex-wrap gap-6 mb-6">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-[#FF671C]">2024</div>
-                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Established</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-[#FF671C]">50+</div>
-                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Menu Items</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-[#FF671C]">4 KM</div>
-                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Free Delivery</div>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row gap-3">
-                        <a href="tel:03058223131"
-                           class="inline-flex items-center justify-center gap-2 bg-[#FF671C] hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-xl transition-all duration-200">
-                            <i class="fas fa-phone"></i> Call Us Now
-                        </a>
-                        <a href="https://wa.me/923018223131" target="_blank"
-                           class="inline-flex items-center justify-center gap-2 border-2 border-[#FF671C] text-[#FF671C] hover:bg-[#FF671C] hover:text-white font-bold px-6 py-3 rounded-xl transition-all duration-200">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right: Logo / Image -->
-                <div class="flex-shrink-0 flex flex-col items-center gap-6">
-                    <div class="relative">
-                        <img src="icons/pizzag-logo.png" alt="PizzaG Logo"
-                             class="relative z-10 w-56 md:w-72 h-auto object-contain drop-shadow-2xl">
-                    </div>
-                    <!-- Address Card -->
-                    <div class="bg-[#1a1a1a] border border-[#FF671C]/20 rounded-xl p-5 text-center max-w-xs">
-                        <i class="fas fa-map-marker-alt text-[#FF671C] text-xl mb-2"></i>
-                        <p class="text-[#f5f5f5]/80 text-sm leading-relaxed">
-                            <span class="text-[#FF671C] font-semibold">Opp. Railway Phattak, Abdul Hakeem More</span><br>
-                            Kacha Khuh Railway Station, Punjab
-                        </p>
-                        <div class="mt-3 pt-3 border-t border-[#FF671C]/10 text-[#f5f5f5]/60 text-xs">
-                            <div><i class="fas fa-phone text-[#FF671C] mr-1"></i> 0305-8223131</div>
-                            <div class="mt-1"><i class="fas fa-clock text-[#FF671C] mr-1"></i> 11:00 AM – 1:00 AM Daily</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- ═══════════════════════════════════════ -->
     <!-- 4. MENU SELECTION                      -->
@@ -655,46 +577,46 @@ function renderCategory($cat) {
             <!-- Category Tabs -->
             <div class="tabs-container mb-8">
                 <div class="flex flex-wrap justify-center gap-2 pb-2">
-                    <button onclick="showCategory('regular', this)" class="tab-pill active px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('regular', this)" class="tab-pill active px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         <i class="fas fa-pizza-slice mr-1"></i> Regular Pizza
                     </button>
-                    <button onclick="showCategory('special', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('special', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         <i class="fas fa-star mr-1"></i> Special Pizza
                     </button>
-                    <button onclick="showCategory('deals', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('deals', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         <i class="fas fa-tags mr-1"></i> Deals
                     </button>
-                    <button onclick="showCategory('burgers', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('burgers', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         <i class="fas fa-burger mr-1"></i> Burgers
                     </button>
-                    <button onclick="showCategory('fries', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('fries', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         <i class="fas fa-fire mr-1"></i> Fries
                     </button>
-                    <button onclick="showCategory('chicken', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('chicken', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         <i class="fas fa-drumstick-bite mr-1"></i> Chicken
                     </button>
-                    <button onclick="showCategory('platters', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('platters', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         Platters
                     </button>
-                    <button onclick="showCategory('pasta', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('pasta', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         Pasta
                     </button>
-                    <button onclick="showCategory('sandwich', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('sandwich', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         Sandwich
                     </button>
-                    <button onclick="showCategory('wraps', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('wraps', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         Wraps
                     </button>
-                    <button onclick="showCategory('paratha', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('paratha', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         Paratha
                     </button>
-                    <button onclick="showCategory('shawarma', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('shawarma', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         Shawarma
                     </button>
-                    <button onclick="showCategory('extras', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('extras', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         Extras
                     </button>
-                    <button onclick="showCategory('beverages', this)" class="tab-pill px-4 py-2 rounded-full font-semibold border-2 whitespace-nowrap text-sm">
+                    <button onclick="showCategory('beverages', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         <i class="fas fa-glass-water mr-1"></i> Beverages
                     </button>
                 </div>
@@ -1056,6 +978,85 @@ function renderCategory($cat) {
     </section>
 
     
+    <!-- ═══════════════════════════════════════ -->
+    <!-- 3. ABOUT US                            -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="about-us" class="bg-[#111111] py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+
+                <!-- Left: Text -->
+                <div class="flex-1">
+                    <p class="text-[#FFC700] font-semibold text-sm uppercase tracking-widest mb-3">Who We Are</p>
+                    <h2 class="text-3xl md:text-4xl font-black text-[#f5f5f5] mb-6">
+                        The Story Behind <span class="text-[#FF671C]">PizzaG</span>
+                    </h2>
+                    <p class="text-[#f5f5f5]/75 text-base md:text-lg leading-relaxed mb-4">
+                        PizzaG Kacha Khuh is a modern fast-casual restaurant launched in 2024 near Kacha Khuh Railway Station — created with one mission: to serve the best pizza and fast food in Kacha Khuh.
+                    </p>
+                    <p class="text-[#f5f5f5]/75 text-base md:text-lg leading-relaxed mb-6">
+                        We prepare our pizzas, burgers, shawarma, wraps, wings, and pasta using fresh ingredients, rich sauces, and perfectly baked dough. Hot, delicious food — every time.
+                    </p>
+
+                    <!-- Mission -->
+                    <div class="bg-[#1a1a1a] border border-[#FF671C]/20 rounded-xl p-4 mb-6">
+                        <p class="text-[#FFC700] font-semibold text-sm uppercase tracking-widest mb-1">Our Mission</p>
+                        <p class="text-[#f5f5f5]/70 text-sm leading-relaxed">
+                            To serve fresh, flavorful, and affordable fast food in Kacha Khuh — with a great dining &amp; delivery experience every day.
+                        </p>
+                    </div>
+
+                    <!-- Quick Facts -->
+                    <div class="flex flex-wrap gap-6 mb-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-[#FF671C]">2024</div>
+                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Established</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-[#FF671C]">50+</div>
+                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Menu Items</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-[#FF671C]">4 KM</div>
+                            <div class="text-xs text-[#f5f5f5]/50 uppercase tracking-wide">Free Delivery</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="tel:03058223131"
+                           class="inline-flex items-center justify-center gap-2 bg-[#FF671C] hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-xl transition-all duration-200">
+                            <i class="fas fa-phone"></i> Call Us Now
+                        </a>
+                        <a href="https://wa.me/923018223131" target="_blank"
+                           class="inline-flex items-center justify-center gap-2 border-2 border-[#FF671C] text-[#FF671C] hover:bg-[#FF671C] hover:text-white font-bold px-6 py-3 rounded-xl transition-all duration-200">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Logo / Image -->
+                <div class="flex-shrink-0 flex flex-col items-center gap-6">
+                    <div class="relative">
+                        <img src="icons/pizzag-logo.png" alt="PizzaG Logo"
+                             class="relative z-10 w-56 md:w-72 h-auto object-contain drop-shadow-2xl">
+                    </div>
+                    <!-- Address Card -->
+                    <div class="bg-[#1a1a1a] border border-[#FF671C]/20 rounded-xl p-5 text-center max-w-xs">
+                        <i class="fas fa-map-marker-alt text-[#FF671C] text-xl mb-2"></i>
+                        <p class="text-[#f5f5f5]/80 text-sm leading-relaxed">
+                            <span class="text-[#FF671C] font-semibold">Opp. Railway Phattak, Abdul Hakeem More</span><br>
+                            Kacha Khuh Railway Station, Punjab
+                        </p>
+                        <div class="mt-3 pt-3 border-t border-[#FF671C]/10 text-[#f5f5f5]/60 text-xs">
+                            <div><i class="fas fa-phone text-[#FF671C] mr-1"></i> 0305-8223131</div>
+                            <div class="mt-1"><i class="fas fa-clock text-[#FF671C] mr-1"></i> 11:00 AM – 1:00 AM Daily</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="section-divider"></div>
 
     <!-- ═══════════════════════════════════════ -->
