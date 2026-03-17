@@ -532,14 +532,14 @@ function renderCategory($cat) {
                     </p>
 
                     <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                    <div class="flex flex-row gap-3 justify-center lg:justify-start">
                         <a href="https://wa.me/923018223131?text=Hi%20PizzaG%20I%20want%20to%20order" target="_blank"
                            class="inline-flex items-center justify-center gap-2 bg-[#FF671C] hover:bg-orange-600 text-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-orange-900/40 hover:scale-105">
-                            <i class="fab fa-whatsapp"></i> Order Online Now
+                            <i class="fab fa-whatsapp"></i> <span class="hidden sm:inline">Order Online Now</span><span class="sm:hidden">Order</span>
                         </a>
                         <a href="#menu"
                            class="inline-flex items-center justify-center gap-2 border-2 border-[#FF671C] text-[#FF671C] hover:bg-[#FF671C] hover:text-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-200">
-                            <i class="fas fa-utensils"></i> View Menu
+                            <i class="fas fa-utensils"></i> <span class="hidden sm:inline">View Menu</span><span class="sm:hidden">Menu</span>
                         </a>
                     </div>
 
