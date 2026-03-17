@@ -507,9 +507,9 @@ function renderCategory($cat) {
     <!-- ═══════════════════════════════════════ -->
     <!-- 2. HERO SECTION                        -->
     <!-- ═══════════════════════════════════════ -->
-    <section class="hero-section min-h-[80vh] flex items-start pt-10 pb-12 px-4">
+    <section class="hero-section md:min-h-[80vh] flex items-start pt-6 pb-4 md:pt-10 md:pb-12 px-4">
         <div class="max-w-7xl mx-auto w-full">
-            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-16">
 
                 <!-- Left: Text Content -->
                 <div class="flex-1 text-center lg:text-left">
@@ -544,10 +544,10 @@ function renderCategory($cat) {
                     </div>
 
                     <!-- Quick Info -->
-                    <div class="mt-8 flex flex-col gap-2 justify-center lg:justify-start text-sm text-[#f5f5f5]/60">
+                    <div class="mt-3 md:mt-8 flex flex-col gap-2 justify-center lg:justify-start text-sm text-[#f5f5f5]/60">
                         <span class="hidden md:inline"><i class="fas fa-map-marker-alt text-[#FF671C] mr-1"></i> Opp. Railway Phattak, Abdul Hakeem More, Kacha Khuh Railway Station</span>
                         <span class="hidden md:inline"><i class="fas fa-phone text-[#FF671C] mr-1"></i> Call: 0305-8223131 &nbsp;|&nbsp; <i class="fab fa-whatsapp text-green-500 mr-1"></i> WhatsApp: 0301-8223131</span>
-                        <span class="flex flex-row items-center justify-center lg:justify-start gap-4">
+                        <span class="flex flex-row items-center justify-center lg:justify-start gap-3 text-xs md:text-sm">
                             <span><i class="fas fa-clock text-[#FF671C] mr-1"></i> Open Daily: 11:00 AM – 1:00 AM</span>
                             <span><i class="fas fa-motorcycle text-[#FF671C] mr-1"></i> Free Home Delivery</span>
                         </span>
