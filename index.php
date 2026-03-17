@@ -450,9 +450,9 @@ function renderCategory($cat) {
 
             <!-- Logo + Brand -->
             <a href="#" class="flex items-center space-x-3 flex-shrink-0">
-                <img src="icons/main-pizzag-logo.png" alt="PizzaG Logo" class="h-16 md:h-20 w-auto object-contain">
+                <img src="icons/main-pizzag-logo.png" alt="PizzaG Logo" class="h-20 md:h-20 w-auto object-contain">
                 <div class="hidden sm:block leading-none">
-                    <h1 class="text-xl md:text-2xl font-black text-[#FF671C] leading-none">PizzaG</h1>
+                    <h1 class="text-xl md:text-2xl font-black leading-none"><span class="text-[#FF671C]">Pizza</span><span class="text-white">G</span></h1>
                     <p class="text-[10px] text-[#FFC700] font-semibold tracking-wide -mt-0.5">Delight in Every Bite...!</p>
                 </div>
             </a>
@@ -514,17 +514,17 @@ function renderCategory($cat) {
                 <!-- Left: Text Content -->
                 <div class="flex-1 text-center lg:text-left">
                     <p class="text-[#FFC700] font-semibold text-sm uppercase tracking-widest mb-3">Premium Fast-Casual Fast Food · Since 2024</p>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#FF671C] leading-tight mb-2">
-                        PizzaG — Best <br>
-                        <span class="text-[#f5f5f5] orange-glow">Pizza in Kacha Khuh</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-2">
+                        <span class="text-[#FF671C]">Pizza</span><span class="text-white">G</span> — Best <br>
+                        <span class="text-[#f5f5f5] orange-glow">Fast Food in Kacha Khuh</span>
                     </h1>
-                    <p class="text-[#f5f5f5]/70 text-lg md:text-xl mb-3 leading-relaxed">
+                    <p class="hidden md:block text-[#f5f5f5]/70 text-lg md:text-xl mb-3 leading-relaxed">
                         Your Ultimate Pizza &amp; Fast Food Destination
                     </p>
-                    <p class="text-[#f5f5f5]/60 text-sm md:text-base mb-2 leading-relaxed font-semibold">
+                    <p class="hidden md:block text-[#f5f5f5]/60 text-sm md:text-base mb-2 leading-relaxed font-semibold">
                         Hot, Fresh &amp; Cheesy Pizza Near Kacha Khuh Railway Station
                     </p>
-                    <p class="text-[#f5f5f5]/55 text-sm mb-5 leading-relaxed">
+                    <p class="hidden md:block text-[#f5f5f5]/55 text-sm mb-5 leading-relaxed">
                         At PizzaG Kacha Khuh, enjoy freshly baked pizzas, juicy burgers, crispy wings, shawarma, fries, and delicious fast food made with premium ingredients. Whether you're searching for pizza near me in Kacha Khuh, pizza delivery in Kacha Khuh, or the best fast food in Kacha Khuh, Pizza G is the place locals love.
                     </p>
                     <p class="text-[#FFC700] font-bold text-xl md:text-2xl mb-8 italic">
@@ -553,7 +553,7 @@ function renderCategory($cat) {
                 </div>
 
                 <!-- Right: Main Restaurant Image -->
-                <div class="flex-shrink-0 w-full max-w-sm lg:max-w-lg xl:max-w-xl">
+                <div class="hidden lg:block flex-shrink-0 w-full max-w-lg xl:max-w-xl">
                     <img src="icons/main/main.png" alt="PizzaG Premium Pizza"
                          class="relative z-10 w-full h-auto rounded-2xl shadow-2xl object-contain">
                 </div>
