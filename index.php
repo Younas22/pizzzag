@@ -515,8 +515,8 @@ function renderCategory($cat) {
                 <div class="flex-1 text-center lg:text-left">
                     <p class="text-[#FFC700] font-semibold text-[10px] md:text-sm uppercase tracking-widest mb-2 whitespace-nowrap">Premium Fast-Casual Fast Food · Since 2024</p>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-2">
-                        <span class="text-[#FF671C]">Pizza</span><span class="text-white">G</span> — Best <br>
-                        <span class="text-[#f5f5f5] orange-glow">Fast Food in Kacha Khuh</span>
+                        <span class="text-[#FF671C]">Pizza</span><span class="text-white">G</span><span class="text-[#FF671C]"> — Best</span> <br>
+                        <span class="text-[#FF671C] orange-glow">Fast Food in Kacha Khuh</span>
                     </h1>
                     <p class="hidden md:block text-[#f5f5f5]/70 text-lg md:text-xl mb-3 leading-relaxed">
                         Your Ultimate Pizza &amp; Fast Food Destination
