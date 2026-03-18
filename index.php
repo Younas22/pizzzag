@@ -577,11 +577,17 @@ function renderCategory($cat) {
             <!-- Category Tabs -->
             <div class="tabs-container mb-8">
                 <div class="flex flex-wrap justify-center gap-2 pb-2">
-                    <button onclick="showCategory('regular', this)" class="tab-pill active px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        <i class="fas fa-pizza-slice mr-1"></i> Regular Pizza
+                    <button onclick="showCategory('appetizers', this)" class="tab-pill active px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
+                        <i class="fas fa-utensils mr-1"></i> Appetizers
                     </button>
-                    <button onclick="showCategory('special', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        <i class="fas fa-star mr-1"></i> Special Pizza
+                    <button onclick="showCategory('pizza-standard', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
+                        <i class="fas fa-pizza-slice mr-1"></i> Deep Pan Standard
+                    </button>
+                    <button onclick="showCategory('pizza-premium', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
+                        <i class="fas fa-star mr-1"></i> Deep Pan Premium
+                    </button>
+                    <button onclick="showCategory('pizza-specialty', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
+                        <i class="fas fa-crown mr-1"></i> Specialty Pizza
                     </button>
                     <button onclick="showCategory('deals', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         <i class="fas fa-tags mr-1"></i> Deals
@@ -589,42 +595,46 @@ function renderCategory($cat) {
                     <button onclick="showCategory('burgers', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
                         <i class="fas fa-burger mr-1"></i> Burgers
                     </button>
-                    <button onclick="showCategory('fries', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        <i class="fas fa-fire mr-1"></i> Fries
-                    </button>
                     <button onclick="showCategory('chicken', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        <i class="fas fa-drumstick-bite mr-1"></i> Chicken
+                        <i class="fas fa-drumstick-bite mr-1"></i> Crispy Meals
                     </button>
                     <button onclick="showCategory('platters', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        Platters
-                    </button>
-                    <button onclick="showCategory('pasta', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        Pasta
-                    </button>
-                    <button onclick="showCategory('sandwich', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        Sandwich
+                        <i class="fas fa-plate-wheat mr-1"></i> Platters
                     </button>
                     <button onclick="showCategory('wraps', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        Wraps
+                        <i class="fas fa-burrito mr-1"></i> Wraps
                     </button>
-                    <button onclick="showCategory('paratha', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        Paratha
+                    <button onclick="showCategory('pasta', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
+                        <i class="fas fa-bowl-food mr-1"></i> Pasta
                     </button>
-                    <button onclick="showCategory('shawarma', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        Shawarma
+                    <button onclick="showCategory('sandwich', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
+                        <i class="fas fa-bread-slice mr-1"></i> Sandwich
                     </button>
-                    <button onclick="showCategory('extras', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        Extras
-                    </button>
-                    <button onclick="showCategory('beverages', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
-                        <i class="fas fa-glass-water mr-1"></i> Beverages
+                    <button onclick="showCategory('sides', this)" class="tab-pill px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold border-2 whitespace-nowrap text-xs md:text-sm">
+                        <i class="fas fa-star mr-1"></i> Sides
                     </button>
                 </div>
             </div>
 
             <!-- Menu Content -->
             <main>
-                <section id="regular" class="menu-section">
+                <section id="appetizers" class="menu-section">
+                    <?php
+                    if (isset($categories['appetizers'])) {
+                        echo renderCategory($categories['appetizers']);
+                    }
+                    ?>
+                </section>
+
+                <section id="pizza-standard" class="menu-section hidden">
+                    <?php
+                    if (isset($categories['pizza']['sections'][0])) {
+                        echo renderSection($categories['pizza']['sections'][0], true);
+                    }
+                    ?>
+                </section>
+
+                <section id="pizza-premium" class="menu-section hidden">
                     <?php
                     if (isset($categories['pizza']['sections'][1])) {
                         echo renderSection($categories['pizza']['sections'][1], true);
@@ -632,10 +642,10 @@ function renderCategory($cat) {
                     ?>
                 </section>
 
-                <section id="special" class="menu-section hidden">
+                <section id="pizza-specialty" class="menu-section hidden">
                     <?php
-                    if (isset($categories['pizza']['sections'][0])) {
-                        echo renderSection($categories['pizza']['sections'][0], true);
+                    if (isset($categories['pizza']['sections'][2])) {
+                        echo renderSection($categories['pizza']['sections'][2], true);
                     }
                     ?>
                 </section>
@@ -656,14 +666,6 @@ function renderCategory($cat) {
                     ?>
                 </section>
 
-                <section id="fries" class="menu-section hidden">
-                    <?php
-                    if (isset($categories['fries'])) {
-                        echo renderCategory($categories['fries']);
-                    }
-                    ?>
-                </section>
-
                 <section id="chicken" class="menu-section hidden">
                     <?php
                     if (isset($categories['chicken'])) {
@@ -680,11 +682,19 @@ function renderCategory($cat) {
                     ?>
                 </section>
 
+                <section id="wraps" class="menu-section hidden">
+                    <?php
+                    if (isset($categories['wraps'])) {
+                        echo renderCategory($categories['wraps']);
+                    }
+                    ?>
+                </section>
+
                 <section id="pasta" class="menu-section hidden">
                     <?php
                     if (isset($categories['others']['sections'])) {
                         foreach ($categories['others']['sections'] as $section) {
-                            if ($section['title'] === 'PASTA') {
+                            if ($section['title'] === 'Pasta') {
                                 echo renderSection($section, true);
                             }
                         }
@@ -696,7 +706,7 @@ function renderCategory($cat) {
                     <?php
                     if (isset($categories['others']['sections'])) {
                         foreach ($categories['others']['sections'] as $section) {
-                            if ($section['title'] === 'Sandwich') {
+                            if ($section['title'] === 'Sandwiches') {
                                 echo renderSection($section, true);
                             }
                         }
@@ -704,48 +714,14 @@ function renderCategory($cat) {
                     ?>
                 </section>
 
-                <section id="wraps" class="menu-section hidden">
-                    <?php
-                    if (isset($categories['wraps'])) {
-                        echo renderCategory($categories['wraps']);
-                    }
-                    ?>
-                </section>
-
-                <section id="paratha" class="menu-section hidden">
-                    <?php
-                    if (isset($categories['paratha'])) {
-                        echo renderCategory($categories['paratha']);
-                    }
-                    ?>
-                </section>
-
-                <section id="shawarma" class="menu-section hidden">
-                    <?php
-                    if (isset($categories['shawarma'])) {
-                        echo renderCategory($categories['shawarma']);
-                    }
-                    ?>
-                </section>
-
-                <section id="extras" class="menu-section hidden">
+                <section id="sides" class="menu-section hidden">
                     <?php
                     if (isset($categories['others']['sections'])) {
-                        $isFirst = true;
                         foreach ($categories['others']['sections'] as $section) {
-                            if ($section['title'] === 'Calzone Chunks' || $section['title'] === 'Pizza Toppings (Extra)') {
-                                echo renderSection($section, $isFirst);
-                                $isFirst = false;
+                            if ($section['title'] === 'Specialties & Sides') {
+                                echo renderSection($section, true);
                             }
                         }
-                    }
-                    ?>
-                </section>
-
-                <section id="beverages" class="menu-section hidden">
-                    <?php
-                    if (isset($categories['beverages'])) {
-                        echo renderCategory($categories['beverages']);
                     }
                     ?>
                 </section>
@@ -758,7 +734,7 @@ function renderCategory($cat) {
     <!-- ═══════════════════════════════════════ -->
     <!-- 5. COMBO DEALS / HOT DEALS             -->
     <!-- ═══════════════════════════════════════ -->
-    <section id="hot-deals" class="bg-[#1a1a1a] py-14 px-4">
+    <section id="hot-deals" class="bg-[#1a1a1a] py-14 px-4" style="display: none;">
         <div class="max-w-7xl mx-auto">
 
             <div class="text-center mb-10">
@@ -1149,8 +1125,8 @@ function renderCategory($cat) {
                             </a>
                         </p>
                         <p>
-                            <a href="mailto:pizzag@gmail.com" class="text-[#f5f5f5]/60 hover:text-[#FF671C] transition flex items-center gap-2">
-                                <i class="fas fa-envelope text-[#FF671C]"></i> pizzag@gmail.com
+                            <a href="mailto:pizzagkkcity@gmail.com" class="text-[#f5f5f5]/60 hover:text-[#FF671C] transition flex items-center gap-2">
+                                <i class="fas fa-envelope text-[#FF671C]"></i> pizzagkkcity@gmail.com 
                             </a>
                         </p>
                     </div>
@@ -1208,7 +1184,12 @@ function renderCategory($cat) {
                 <i class="fas fa-home text-xl"></i>
                 <span class="text-[10px] mt-1 font-semibold">Home</span>
             </a>
-            <a href="#hot-deals" class="flex flex-col items-center text-[#FF671C] hover:text-orange-400 transition px-3 py-1">
+            <!-- <a href="#hot-deals" class="flex flex-col items-center text-[#FF671C] hover:text-orange-400 transition px-3 py-1">
+                <i class="fas fa-fire text-xl"></i>
+                <span class="text-[10px] mt-1 font-bold">Deals</span>
+            </a> -->
+
+            <a href="#menu" onclick="goToDeals()" class="flex flex-col items-center text-[#FF671C] hover:text-orange-400 transition px-3 py-1">
                 <i class="fas fa-fire text-xl"></i>
                 <span class="text-[10px] mt-1 font-bold">Deals</span>
             </a>
@@ -1343,6 +1324,11 @@ function renderCategory($cat) {
 
             document.querySelectorAll('.tab-pill').forEach(b => b.classList.remove('active'));
             if (btn) btn.classList.add('active');
+        }
+
+        function goToDeals() {
+            const btn = Array.from(document.querySelectorAll('.tab-pill')).find(b => b.getAttribute('onclick') && b.getAttribute('onclick').includes("'deals'"));
+            showCategory('deals', btn);
         }
 
         function orderWhatsapp(item) {
