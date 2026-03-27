@@ -549,7 +549,7 @@ function renderCategory($cat) {
 
                 <!-- Right: Main Restaurant Image -->
                 <div class="hidden lg:block flex-shrink-0 w-full max-w-lg xl:max-w-xl">
-                    <img src="icons/main/main.png" alt="PizzaG Premium Pizza"
+                    <img src="icons/main/main2.png" alt="PizzaG Premium Pizza"
                          class="relative z-10 w-full h-auto rounded-2xl shadow-2xl object-contain">
                 </div>
             </div>
@@ -829,90 +829,166 @@ function renderCategory($cat) {
 
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
 
-                <!-- Entrance -->
-                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=450&fit=crop" alt="PizzaG Entrance"
+                <!-- Entrance (2 photos) -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3] cursor-pointer"
+                     onclick="openGalleryModal('Entrance', ['gallery/Entrance1.jpeg','gallery/Entrance2.jpeg'])">
+                    <img src="gallery/Entrance1.jpeg" alt="PizzaG Entrance"
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex flex-col justify-end p-3">
                         <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-door-open text-[#FFC700]"></i> Entrance</span>
+                        <span class="text-[#ee892f] text-xs mt-1 flex items-center gap-1"><i class="fas fa-images"></i> View All 2 Photos</span>
                     </div>
                 </div>
 
-                <!-- Inside View -->
-                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=450&fit=crop" alt="PizzaG Inside"
+                <!-- Inside View (4 photos) -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3] cursor-pointer"
+                     onclick="openGalleryModal('Inside View', ['gallery/Inside1.jpeg','gallery/Inside2.jpeg','gallery/Inside3.jpeg','gallery/Inside4.jpeg'])">
+                    <img src="gallery/Inside1.jpeg" alt="PizzaG Inside"
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex flex-col justify-end p-3">
                         <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-chair text-[#FFC700]"></i> Inside View</span>
+                        <span class="text-[#ee892f] text-xs mt-1 flex items-center gap-1"><i class="fas fa-images"></i> View All 4 Photos</span>
                     </div>
                 </div>
 
-                <!-- Outside View -->
-                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&h=450&fit=crop" alt="PizzaG Outside"
+                <!-- Outside View (4 photos) -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3] cursor-pointer"
+                     onclick="openGalleryModal('Outside View', ['gallery/Outside1.jpeg','gallery/Outside2.jpeg','gallery/Outside3.jpeg','gallery/Outside4.jpeg'])">
+                    <img src="gallery/Outside1.jpeg" alt="PizzaG Outside"
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex flex-col justify-end p-3">
                         <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-store text-[#FFC700]"></i> Outside View</span>
+                        <span class="text-[#ee892f] text-xs mt-1 flex items-center gap-1"><i class="fas fa-images"></i> View All 4 Photos</span>
                     </div>
                 </div>
 
-                <!-- Seating Area -->
-                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=450&fit=crop" alt="PizzaG Seating"
+                <!-- Seating Area (8 photos) -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3] cursor-pointer"
+                     onclick="openGalleryModal('Seating Area', ['gallery/Seating1.jpeg','gallery/Seating2.jpeg','gallery/Seating3.jpeg','gallery/Seating4.jpeg','gallery/Seating5.jpeg','gallery/Seating6.jpeg','gallery/Seating7.jpeg','gallery/Seating8.jpeg'])">
+                    <img src="gallery/Seating1.jpeg" alt="PizzaG Seating"
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex flex-col justify-end p-3">
                         <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-couch text-[#FFC700]"></i> Seating Area</span>
+                        <span class="text-[#ee892f] text-xs mt-1 flex items-center gap-1"><i class="fas fa-images"></i> View All 8 Photos</span>
                     </div>
                 </div>
 
-                <!-- Team Uniform -->
-                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&h=450&fit=crop" alt="PizzaG Uniform"
+                <!-- Team Uniform (4 photos) -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3] cursor-pointer"
+                     onclick="openGalleryModal('Team Uniform', ['gallery/Uniform1.jpeg','gallery/Uniform2.jpeg','gallery/Uniform3.jpeg','gallery/Uniform4.jpeg'])">
+                    <img src="gallery/Uniform1.jpeg" alt="PizzaG Uniform"
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex flex-col justify-end p-3">
                         <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-tshirt text-[#FFC700]"></i> Team Uniform</span>
+                        <span class="text-[#ee892f] text-xs mt-1 flex items-center gap-1"><i class="fas fa-images"></i> View All 4 Photos</span>
                     </div>
                 </div>
 
-                <!-- Website -->
-                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=450&fit=crop" alt="PizzaG Website"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-globe text-[#FFC700]"></i> Website</span>
+                <!-- Website (1 photo - monitor mockup) -->
+                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3] bg-[#1a1a1a] flex items-center justify-center px-4 pt-3 pb-4">
+                    <div class="w-full select-none" style="max-width:92%;">
+                        <!-- Monitor bezel -->
+                        <div class="relative bg-white rounded-xl border-4 border-[#e0e0e0] shadow-2xl" style="padding-top:58%;">
+                            <!-- Top bar with dots -->
+                            <div class="absolute top-0 left-0 right-0 h-5 bg-[#f2f2f2] rounded-t-lg flex items-center px-2 gap-1 z-10 border-b border-[#ddd]">
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#ff5f57]"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#febc2e]"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#28c840]"></div>
+                            </div>
+                            <!-- Screen image -->
+                            <img src="gallery/website.jpeg" alt="PizzaG Website"
+                                 class="absolute inset-0 top-5 w-full h-[calc(100%-1.25rem)] object-cover object-top group-hover:scale-105 transition-transform duration-700 rounded-b-lg">
+                            <!-- Screen glare -->
+                            <div class="absolute inset-0 top-5 rounded-b-lg bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none"></div>
+                        </div>
+                        <!-- Neck -->
+                        <div class="flex justify-center">
+                            <div class="w-[12%] h-4 bg-gradient-to-b from-[#e0e0e0] to-[#d0d0d0]"></div>
+                        </div>
+                        <!-- Base stand -->
+                        <div class="flex justify-center">
+                            <div class="w-[42%] h-2.5 bg-gradient-to-b from-[#e0e0e0] to-[#cacaca] rounded-b-lg shadow-md"></div>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Pizza Special -->
-                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=450&fit=crop" alt="PizzaG Signature Pizza"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-pizza-slice text-[#FFC700]"></i> Signature Pizza</span>
-                    </div>
-                </div>
-
-                <!-- Food Spread -->
-                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=450&fit=crop" alt="PizzaG Food"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-utensils text-[#FFC700]"></i> Our Food</span>
-                    </div>
-                </div>
-
-                <!-- Night Ambiance -->
-                <div class="gallery-item group relative rounded-2xl overflow-hidden border border-[#ee892f]/20 hover:border-[#ee892f]/60 transition-all duration-300 shadow-lg aspect-[4/3]">
-                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&h=450&fit=crop" alt="PizzaG Night Ambiance"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                        <span class="text-white font-bold text-sm flex items-center gap-1.5"><i class="fas fa-moon text-[#FFC700]"></i> Night Ambiance</span>
+                    <div class="absolute bottom-1.5 left-0 right-0 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-bold text-xs flex items-center justify-center gap-1.5"><i class="fas fa-globe text-[#FFC700]"></i> Website</span>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="galleryModal" class="fixed inset-0 z-[999] hidden flex items-center justify-center bg-black/95 p-4" onclick="closeGalleryModal(event)">
+        <div class="relative w-full max-w-5xl bg-[#111] rounded-2xl overflow-hidden shadow-2xl border border-[#ee892f]/30" onclick="event.stopPropagation()">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between px-5 py-3 border-b border-[#ee892f]/20">
+                <h3 id="modalTitle" class="text-white font-bold text-lg flex items-center gap-2"><i class="fas fa-images text-[#ee892f]"></i> <span></span></h3>
+                <button onclick="closeGalleryModal()" class="text-white/60 hover:text-white text-2xl leading-none">&times;</button>
+            </div>
+            <!-- Main Image -->
+            <div class="relative bg-black flex items-center justify-center" style="min-height:320px;max-height:60vh;">
+                <button onclick="prevModalImg()" class="absolute left-3 z-10 bg-[#ee892f] hover:bg-[#d4761a] text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors text-xl shadow-lg">&#8249;</button>
+                <img id="modalMainImg" src="" alt="" class="max-h-[60vh] max-w-full object-contain">
+                <button onclick="nextModalImg()" class="absolute right-3 z-10 bg-[#ee892f] hover:bg-[#d4761a] text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors text-xl shadow-lg">&#8250;</button>
+            </div>
+            <!-- Counter -->
+            <div class="text-center py-2 text-[#ee892f] text-sm font-semibold" id="modalCounter"></div>
+            <!-- Thumbnails -->
+            <div id="modalThumbs" class="flex gap-2 overflow-x-auto px-4 pb-4 pt-1 justify-center flex-wrap"></div>
+        </div>
+    </div>
+
+    <script>
+    var _gModal = { images: [], current: 0 };
+    function openGalleryModal(title, images) {
+        _gModal.images = images;
+        _gModal.current = 0;
+        document.getElementById('modalTitle').querySelector('span').textContent = title;
+        document.getElementById('galleryModal').classList.remove('hidden');
+        document.getElementById('galleryModal').classList.add('flex');
+        document.body.style.overflow = 'hidden';
+        renderModalImg();
+        renderThumbs();
+    }
+    function closeGalleryModal(e) {
+        if (e && e.target !== document.getElementById('galleryModal')) return;
+        document.getElementById('galleryModal').classList.add('hidden');
+        document.getElementById('galleryModal').classList.remove('flex');
+        document.body.style.overflow = '';
+    }
+    function renderModalImg() {
+        var img = _gModal.images[_gModal.current];
+        document.getElementById('modalMainImg').src = img;
+        document.getElementById('modalCounter').textContent = (_gModal.current + 1) + ' / ' + _gModal.images.length;
+        document.querySelectorAll('#modalThumbs img').forEach(function(t, i) {
+            t.classList.toggle('border-[#ee892f]', i === _gModal.current);
+            t.classList.toggle('opacity-100', i === _gModal.current);
+            t.classList.toggle('opacity-50', i !== _gModal.current);
+        });
+    }
+    function renderThumbs() {
+        var c = document.getElementById('modalThumbs');
+        c.innerHTML = '';
+        _gModal.images.forEach(function(src, i) {
+            var img = document.createElement('img');
+            img.src = src;
+            img.className = 'h-16 w-24 object-cover rounded-lg border-2 cursor-pointer transition-all ' + (i === 0 ? 'border-[#ee892f] opacity-100' : 'border-transparent opacity-50');
+            img.onclick = function() { _gModal.current = i; renderModalImg(); };
+            c.appendChild(img);
+        });
+    }
+    function prevModalImg() { _gModal.current = (_gModal.current - 1 + _gModal.images.length) % _gModal.images.length; renderModalImg(); }
+    function nextModalImg() { _gModal.current = (_gModal.current + 1) % _gModal.images.length; renderModalImg(); }
+    document.addEventListener('keydown', function(e) {
+        var m = document.getElementById('galleryModal');
+        if (m.classList.contains('hidden')) return;
+        if (e.key === 'ArrowLeft') prevModalImg();
+        if (e.key === 'ArrowRight') nextModalImg();
+        if (e.key === 'Escape') { m.classList.add('hidden'); m.classList.remove('flex'); document.body.style.overflow = ''; }
+    });
+    </script>
 
     <!-- ═══════════════════════════════════════ -->
     <!-- 8. DELIVERY AREAS                      -->
