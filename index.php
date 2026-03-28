@@ -434,6 +434,15 @@ function renderCategory($cat) {
     </style>
 
     <meta name="google-site-verification" content="MyRLpkUWBs55bcOwWPWk3VFqUPIjNZG51EWKlenLK7k" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4FF8TWLEL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-R4FF8TWLEL');
+    </script>
 </head>
 <body class="bg-[#0a0a0a] text-[#f5f5f5]">
 
