@@ -432,6 +432,8 @@ function renderCategory($cat) {
             .tab-pill { padding: 4px 10px; font-size: 10px; }
         }
     </style>
+
+    <meta name="google-site-verification" content="MyRLpkUWBs55bcOwWPWk3VFqUPIjNZG51EWKlenLK7k" />
 </head>
 <body class="bg-[#0a0a0a] text-[#f5f5f5]">
 
