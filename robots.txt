@@ -1,11 +1,11 @@
 # Robots.txt for Pizza Hub Kacha Khuh
-# https://pizzahubkk.com
+# https://pizzagkk.com
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://pizzahubkk.com/sitemap.xml
+Sitemap: https://pizzagkk.com/sitemap.xml
 
 # Disallow API and system folders
 Disallow: /api/
